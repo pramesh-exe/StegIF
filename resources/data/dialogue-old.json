@@ -1,0 +1,3304 @@
+[
+    {
+        "id": 100,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good morning!!! Are you okay?",
+        "background": "lab/blurry",
+        "emotion": "happy",
+        "next": 101,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 101,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "You remember your codename right?",
+        "background": "lab/in-pixinator",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "PixelPhantom",
+                "destination_id": 102
+            },
+            {
+                "text": "ByteBandit",
+                "destination_id": 102
+            },
+            {
+                "text": "007",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent Jan-Kees",
+                "destination_id": 102
+            },
+            {
+                "text": "ZeroTrace",
+                "destination_id": 102
+            },
+            {
+                "text": "Sudo",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent B.",
+                "destination_id": 102
+            },
+            {
+                "text": "Stella",
+                "destination_id": 102
+            },
+            {
+                "text": "Joe",
+                "destination_id": 102
+            }
+        ],
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 102,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. ",
+        "background": "lab/in-pixinator",
+        "emotion": "happy",
+        "next": 103,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 103,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "I am glad you are back alive.",
+        "background": "lab/in-pixinator",
+        "emotion": "happy",
+        "choices": [
+            {
+                "text": "Yeah, that\u2019s great!",
+                "destination_id": 104
+            },
+            {
+                "text": "Wait what tests?",
+                "destination_id": 105
+            }
+        ],
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 104,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes, I know! I am the amazing inventor of the Pixinator!",
+        "background": "lab/in-pixinator",
+        "emotion": "interesting",
+        "next": 106,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 105,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "You don\u2019t remember my great invention, the Pixinator?",
+        "background": "lab/in-pixinator",
+        "emotion": "shocked",
+        "next": 106,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 106,
+        "character": "HQ Security",
+        "type": "TEXT",
+        "content": "ALERT! ALERT! ALERT!",
+        "background": "lab/alert",
+        "emotion": "default",
+        "next": 107,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 107,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again.",
+        "background": "lab/alert",
+        "emotion": "angry",
+        "next": 108,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 108,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "No way! I even made our encryption algorithm more complex! ",
+        "background": "lab/alert",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "How does cryptography work again?",
+                "destination_id": 130
+            },
+            {
+                "text": "I am familiar with cryptography",
+                "destination_id": 110
+            },
+            {
+                "text": "That\u2019s your problem",
+                "destination_id": 120
+            }
+        ],
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 110,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good for you.",
+        "background": "lab/alert",
+        "emotion": "tired",
+        "next": 139,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 120,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let me cry in the corner for a second\u2026",
+        "background": "lab/alert",
+        "emotion": "tired",
+        "next": 139,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 130,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When I want to send a message to you, I encrypt my message first with the public key that you shared with me.",
+        "background": "lab/explain/cryptography-1",
+        "emotion": "default",
+        "next": 131,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 131,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This encrypted message is unreadable, even for myself. This is the cipher text, which I send over the network.",
+        "background": "lab/explain/cryptography-2",
+        "emotion": "happy",
+        "next": 132,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 132,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When you receive my message, you are the only one who can decrypt the message.",
+        "background": "lab/explain/cryptography-3",
+        "emotion": "interesting",
+        "next": 133,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 133,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That is because only you have the private key that can decrypt this cipher text.",
+        "background": "lab/explain/cryptography-4",
+        "emotion": "interesting",
+        "next": 134,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 134,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This is, of course, assuming that the public key you shared with me belongs to your private key...",
+        "background": "lab/explain/cryptography-5",
+        "emotion": "default",
+        "next": 135,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 135,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026 and that you never shared your private key with anyone. I mean, just keep it private!",
+        "background": "lab/explain/cryptography-6",
+        "emotion": "default",
+        "next": 139,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 139,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Let\u2019s move to the control room to discuss this matter.",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 140,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 140,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Okay, back to the topic my people.",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 141,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 141,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The how and what don't matter. What matters is that we are in big trouble now.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 142,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 142,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Our sources think that SilentSpectra has access to a super fast computer capable of cracking our secret keys.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 143,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 143,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "You mean a quantum computer?",
+        "background": "control-room/default",
+        "emotion": "shocked",
+        "next": 144,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 144,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "I don\u2019t know.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "Why can\u2019t we decrypt their communication?",
+                "destination_id": 145
+            },
+            {
+                "text": "How is SilentSpectra communicating then?",
+                "destination_id": 145
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 145,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Well\u2026 our sources haven\u2019t been able to find any suspicious communication at all.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 146,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 146,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "Their interactions on social media seem fairly normal, for example.",
+        "background": "control-room/social-media",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Any good news?",
+                "destination_id": 147
+            },
+            {
+                "text": "This is a disaster!",
+                "destination_id": 147
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 147,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The good news is that we have tracked down and detained Agent P., who seems to be working for SilentSpectra.",
+        "background": "control-room/tracked",
+        "emotion": "confident",
+        "next": 148,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 148,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have secured his hideout too. I will interrogate him to see whether he has some information.",
+        "background": "control-room/tracked",
+        "emotion": "confident",
+        "next": 149,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 149,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "${name}, I want you to search his room for clues. ",
+        "background": "control-room/tracked",
+        "emotion": "default",
+        "next": 150,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 150,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, you stay on standby in case ${name} needs you to analyse something. ",
+        "background": "control-room/tracked",
+        "emotion": "default",
+        "next": 151,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 151,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Yes ma\u2019am!",
+        "background": "control-room/tracked",
+        "emotion": "happy",
+        "choices": [
+            {
+                "text": "Let\u2019s investigate!",
+                "destination_id": 190
+            },
+            {
+                "text": "Let\u2019s wait!",
+                "destination_id": 152
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 152,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "What do you want to wait for?",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "I need to go to the toilet",
+                "destination_id": 160
+            },
+            {
+                "text": "I need a cup of coffee first",
+                "destination_id": 170
+            },
+            {
+                "text": "I want to play Pok\u00e9mon Go",
+                "destination_id": 180
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 160,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I did not want to hear that.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 170,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, is drowsiness one of the side effects of your tests?",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 171,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 171,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 180,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You know I pay you well enough to just do your job!",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 190,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Just go to Agent P.\u2019s hideout now.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 200,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, I have arrived at Agent P.\u2019s hideout.",
+        "background": "hideout/default",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 201,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I should call Dr. Glitchwell whenever I am ready. What should I investigate?",
+        "background": "hideout/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "The computer",
+                "destination_id": 210
+            },
+            {
+                "text": "The bin",
+                "destination_id": 220
+            },
+            {
+                "text": "The books",
+                "destination_id": 240
+            },
+            {
+                "text": "I should call Dr. Glitchwell",
+                "destination_id": 280
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 210,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I see two images\u2026 What could that possibly mean?",
+        "background": "hideout/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "They\u2019re the same picture",
+                "destination_id": 211
+            },
+            {
+                "text": "One image is altered",
+                "destination_id": 212
+            },
+            {
+                "text": "Agent P. really likes sunrises",
+                "destination_id": 213
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 211,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "hideout/same-picture",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 212,
+        "character": "player",
+        "type": "TEXT",
+        "content": "But why would one picture be altered?",
+        "background": "hideout/images",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 213,
+        "character": "player",
+        "type": "TEXT",
+        "content": "How lovely, I like sunrises too!",
+        "background": "hideout/images",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 220,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Do I understand what is written here?",
+        "background": "hideout/diagram",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "No, what does this diagram mean?",
+                "destination_id": 221
+            },
+            {
+                "text": "Yes, the diagram speaks for itself",
+                "destination_id": 230
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 221,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I'm getting a call...",
+        "background": "hideout/diagram",
+        "emotion": "default",
+        "next": 222,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 222,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Hello ${name}! You haven\u2019t called me yet, so I got worried. What\u2019s up?",
+        "background": "hideout/diagram",
+        "emotion": "calling-happy",
+        "next": 223,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 223,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 224,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 224,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "So, you're having trouble understanding a diagram you found\u2026 Let me see\u2026",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 225,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 225,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key.",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 226,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 226,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume the carrier will be some kind of data object on a computer, such as a PDF, MP3, or an image.",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 227,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 227,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The key will probably be used so that others cannot uncover the secret message easily.",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 228,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 228,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 229,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 229,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Welp, I need to go! Boss M. calls me.",
+        "background": "hideout/diagram",
+        "emotion": "calling-shocked",
+        "next": 230,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 230,
+        "character": "player",
+        "type": "TEXT",
+        "content": "There is also a newspaper article in the bin, about images appearing on eBay containing steganography.",
+        "background": "hideout/newspaper",
+        "emotion": "default",
+        "next": 231,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 231,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That\u2019s a surprise!",
+        "background": "hideout/newspaper",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 240,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Agent P. has quite some books. Let\u2019s look into them.",
+        "background": "hideout/books",
+        "emotion": "default",
+        "next": 241,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 241,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 The first book is about the difference between steganography and cryptography.",
+        "background": "hideout/book-1",
+        "emotion": "default",
+        "next": 242,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 242,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Also, on the right side an example of hiding a message with the help of lemon juice is shown.",
+        "background": "hideout/book-1",
+        "emotion": "default",
+        "next": 243,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 243,
+        "character": "player",
+        "type": "TEXT",
+        "content": "On the next page, an example of a secret message using cryptography.",
+        "background": "hideout/book-1-next",
+        "emotion": "default",
+        "next": 244,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 244,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The second book is a history book.",
+        "background": "hideout/book-2",
+        "emotion": "default",
+        "next": 245,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 245,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It shows how a slave was used as a cover to hide a secret message which was tattooed on the slave\u2019s scalp.",
+        "background": "hideout/book-2",
+        "emotion": "default",
+        "next": 246,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 246,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The last book shows that terrorists use steganography. It is said that the technique is even used for the 9/11 attacks.",
+        "background": "hideout/book-3",
+        "emotion": "default",
+        "next": 247,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 247,
+        "character": "player",
+        "type": "TEXT",
+        "content": "So, steganography is quite important!",
+        "background": "hideout/book-3",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 280,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Hello ${name}! I am so relieved to hear from you. Are you done investigating?",
+        "background": "hideout/default",
+        "emotion": "calling-happy",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 281
+            },
+            {
+                "text": "No",
+                "destination_id": 201
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 281,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "What have you found?",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "choices": [
+            {
+                "text": "A mess",
+                "destination_id": 282
+            },
+            {
+                "text": "Steganography",
+                "destination_id": 283
+            },
+            {
+                "text": "Cryptography",
+                "destination_id": 284
+            },
+            {
+                "text": "A firewall",
+                "destination_id": 285
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 282,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Then I would like you to clean your room for once!",
+        "background": "hideout/default",
+        "emotion": "calling-tired",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 283,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes! Agent P. seems to be particularly interested in steganography.",
+        "background": "hideout/default",
+        "emotion": "calling-default",
+        "next": 290,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 284,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There must be more than solely cryptography\u2026",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 285,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I like the wall decoration too!",
+        "background": "hideout/default",
+        "emotion": "calling-happy",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 290,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Bring something I can analyse. I can only analyse one item, otherwise we will not be able to take action in time. Bye!",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "next": 291,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 291,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I will bring\u2026",
+        "background": "hideout/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "The pictures from the computer",
+                "destination_id": 320
+            },
+            {
+                "text": "The diagram from the bin",
+                "destination_id": 300
+            },
+            {
+                "text": "The books about steganography",
+                "destination_id": 310
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 300,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Okay, I see you have brought the diagram from the bin. Let me have a look\u2026",
+        "background": "control-room/analyse/diagram",
+        "emotion": "happy",
+        "next": 301,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 301,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "default",
+        "next": 302,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 302,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 303,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 303,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The key will probably be used so that others cannot uncover the secret message easily.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 304,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 304,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 305,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 305,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Agent P. seems to be very interested in combining a hidden message with a carrier object.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 306,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 306,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This must be called steganography! They seem to be using it, but how?",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 307,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 307,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I cannot analyse any further. Please return to Agent P.\u2019s room and bring something useful this time.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 310,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Okay, I see you have brought the books from the shelf. That must be heavy! Let me take a look at it\u2026",
+        "background": "control-room/analyse/books",
+        "emotion": "happy",
+        "next": 311,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 311,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "So, steganography is the art of hiding, which is different to cryptography.",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 312,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 312,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Another book is about the history of steganography.",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 313,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 313,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "It seems it has had its uses in a non-digital world as well.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 314,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 314,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But also, it has been part of a major history event.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 315,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 315,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Agent P. seems to be very interested in this topic, but with just this information I cannot proceed.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 316,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 316,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Please return to Agent P.\u2019s room and bring something useful this time.",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 320,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Okay, I see you have brought the two images from the computer. What would you like me to analyse?",
+        "background": "control-room/analyse/images-question",
+        "emotion": "interesting",
+        "choices": [
+            {
+                "text": "The file size",
+                "destination_id": 321
+            },
+            {
+                "text": "The metadata of the image",
+                "destination_id": 325
+            },
+            {
+                "text": "The individual bits",
+                "destination_id": 330
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 321,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The file size seems to be exactly the same\u2026",
+        "background": "control-room/analyse/images/file-size",
+        "emotion": "default",
+        "next": 322,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 322,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There is no evidence to suggest that these images are suspicious.",
+        "background": "control-room/analyse/images/file-size",
+        "emotion": "default",
+        "next": 320,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 325,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The images are both BMP images. Also, the creation date of both images are exactly the same. They seem duplicates.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 326,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 326,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "BMP images store each pixel within the RGBA model (Red, Green, Blue, Alpha).",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 327,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 327,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Alpha is the opacity value. All RGBA values will be combined into one colour pixel.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 328,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 328,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Is this relevant for steganography?",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "happy",
+        "next": 320,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 330,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let me take a look at the individual bits for both images\u2026",
+        "background": "control-room/analyse/images/bits",
+        "emotion": "happy",
+        "next": 331,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 331,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "WOAH!!!",
+        "background": "control-room/analyse/images/bits",
+        "emotion": "shocked",
+        "next": 332,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 332,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "The least significant bits seem to differ!",
+        "background": "control-room/analyse/images/bits-highlighted",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "What are least significant bits?",
+                "destination_id": 333
+            },
+            {
+                "text": "Nice finding!",
+                "destination_id": 345
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 333,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Bits are presented as either 0 or 1. A group of eight bits form a byte, which can represent a decimal value between 0 and 255.",
+        "background": "control-room/analyse/images/explain/lsb-1",
+        "emotion": "interesting",
+        "next": 334,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 334,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "The rightmost bit is the least significant bit, since it adjusts its value minimally.",
+        "background": "control-room/analyse/images/explain/lsb-1",
+        "emotion": "interesting",
+        "choices": [
+            {
+                "text": "Could you give some examples?",
+                "destination_id": 335
+            },
+            {
+                "text": "I understand now",
+                "destination_id": 345
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 335,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The byte 10001000 has a decimal value of 136. Let\u2019s change the least significant bit.",
+        "background": "control-room/analyse/images/explain/lsb-2",
+        "emotion": "interesting",
+        "next": 336,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 336,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "10001000 changed to 10001001, because the most right bit is the least significant bit.",
+        "background": "control-room/analyse/images/explain/lsb-3",
+        "emotion": "interesting",
+        "next": 337,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 337,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The value of 10001001 is 137, so if this byte represented the colour red, we have only changed its value slightly.",
+        "background": "control-room/analyse/images/explain/lsb-4",
+        "emotion": "interesting",
+        "next": 338,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 338,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "In contrast: if we would have adjusted 10001000 to 00001000, its value would have been 8.",
+        "background": "control-room/analyse/images/explain/lsb-5",
+        "emotion": "interesting",
+        "next": 339,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 339,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "If this byte represented the red colour, the colour would have drastically changed!",
+        "background": "control-room/analyse/images/explain/lsb-5",
+        "emotion": "shocked",
+        "next": 345,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 345,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When we line up each byte's least significant bit, I can see some characters.",
+        "background": "control-room/analyse/images/bits-highlighted-stream",
+        "emotion": "default",
+        "next": 346,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 346,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let\u2019s say the number 1 is \u2018a\u2019, and the number 26 is \u2018z\u2019, then we can read a word in the right picture!",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "default",
+        "next": 347,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 347,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume this is the simple protocol that Agent P. came up with.",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "happy",
+        "next": 348,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 348,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "If he used a stego key to randomize which least significant bits are used, we would not be able to have read this message.",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "happy",
+        "next": 349,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 349,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I guess that is why Agent P. highlighted \u2018stego key\u2019 in the diagram he threw away\u2026",
+        "background": "control-room/analyse/images/bits-diagram-reminder",
+        "emotion": "default",
+        "next": 350,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 350,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "He has not implemented a stego key yet. This gives us opportunities!",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "default",
+        "next": 351,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 351,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "By the way, what do you think Agent P. is using this steganography for?",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "For communication within SilentSpectra",
+                "destination_id": 352
+            },
+            {
+                "text": "For embedding malicious code",
+                "destination_id": 365
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 352,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good observation! That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
+        "background": "control-room/social-media",
+        "emotion": "shocked",
+        "next": 353,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 353,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Maybe they hide their secret messages within their images on social media!",
+        "background": "control-room/social-media",
+        "emotion": "interesting",
+        "next": 354,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 354,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But maybe they embed malicious code within the images too.",
+        "background": "control-room/analyse/images",
+        "emotion": "interesting",
+        "next": 355,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 355,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "MAYBE WE'VE BEEN HACKED\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 356,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 356,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 357,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 357,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And then they use images to send our stolen private keys back to them.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 358,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 358,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 359,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 359,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "What is an Intrusion Detection System?",
+                "destination_id": 360
+            },
+            {
+                "text": "I understand",
+                "destination_id": 362
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 360,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 361,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 361,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 362,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 362,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I need to do research on this topic to prevent attacks using steganography.",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "next": 380,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 365,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "MAYBE WE'VE BEEN HACKED\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 366,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 366,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 367,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 367,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And then they use images to send our stolen private keys back to them.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 368,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 368,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 369,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 369,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "What is an Intrusion Detection System?",
+                "destination_id": 370
+            },
+            {
+                "text": "I understand",
+                "destination_id": 372
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 370,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 371,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 371,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 372,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 372,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I need to do research on this topic, to prevent these attacks using steganography.",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "next": 373,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 373,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That reminds me\u2026 ",
+        "background": "control-room/analyse/images",
+        "emotion": "happy",
+        "next": 374,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 374,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Maybe SilentSpectra hides their secret messages within their images on social media!",
+        "background": "control-room/social-media",
+        "emotion": "default",
+        "next": 375,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 375,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
+        "background": "control-room/social-media",
+        "emotion": "interesting",
+        "next": 380,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 380,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "${name}, please find the hidden message of this part of the image. Dr. Glitchwell, you do the other part.",
+        "background": "control-room/hidden-message",
+        "emotion": "default",
+        "next": 381,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 381,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "What word did you find?",
+        "background": "control-room/hidden-message",
+        "emotion": "confident",
+        "choices": [
+            {
+                "text": "Fire",
+                "destination_id": 382
+            },
+            {
+                "text": "Cash",
+                "destination_id": 382
+            },
+            {
+                "text": "Iron",
+                "destination_id": 382
+            },
+            {
+                "text": "Sign",
+                "destination_id": 382
+            },
+            {
+                "text": "Face",
+                "destination_id": 390
+            },
+            {
+                "text": "Four",
+                "destination_id": 382
+            },
+            {
+                "text": "Star",
+                "destination_id": 382
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 382,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There is no way that correlates with my finding.",
+        "background": "control-room/hidden-message",
+        "emotion": "shocked",
+        "next": 383,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 383,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Make sure to concatenate all the least significant bits.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "interesting",
+        "next": 384,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 384,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That is where the undetectable secret message is stored.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "default",
+        "next": 385,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 385,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Please try again.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "default",
+        "next": 381,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 390,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I found \u2018book\u2019. I guess they are using Facebook for their communication!",
+        "background": "control-room/analyse/images",
+        "emotion": "interesting",
+        "next": 391,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 391,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow.",
+        "background": "control-room/analyse/images",
+        "emotion": "confident",
+        "next": 400,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 400,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good morning\u2026 I worked all night, and I found out that SilentSpectra is indeed using Facebook to communicate.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 401,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 401,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have seen their public messages on social media before of course, but we weren\u2019t aware that they integrated any secret messages within the attached files.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 402,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 402,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Indeed. I also found out that Agent T., who is working for SilentSpectra is using the email adress tom@covinco.com actively.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "choices": [
+            {
+                "text": "We can perform a DDoS attack",
+                "destination_id": 403
+            },
+            {
+                "text": "We can perform USB Drops",
+                "destination_id": 404
+            },
+            {
+                "text": "We can perform spear phishing",
+                "destination_id": 407
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 403,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Well\u2026 we haven\u2019t located their servers yet, so that is not possible.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 405,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 404,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Uhhh... we haven\u2019t located their main hideout yet, so that will be useless.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 405,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 405,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "What are you suggesting instead?",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 406,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 406,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I suggest we use spear phishing to send an email to Agent T, and hope he will open the attachment in which we will hide Stegware.",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 410,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 407,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Indeed. We can apply Stegware within the attachment of our spear phishing email.",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 410,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 410,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Stegware?",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 411,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 411,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes, the name for malicious software which makes use of steganography.",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 412,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 412,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "SilentSpectra hacked us in the end. We should\u2026",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "Take revenge!",
+                "destination_id": 413
+            },
+            {
+                "text": "Find out their methods",
+                "destination_id": 413
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 413,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I was just about to say that!",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 414,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 414,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "To do that we need to get into their system and steal their private keys and steganography research.",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 415,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 415,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Additionally, I want to be able to have full control over their system, so that I can shut it down when needed.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 416,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 416,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Or simply get updates on their progress without them knowing that we\u2019re in.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 417,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 417,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "We will use ${name} and my new invention the Pixinator. You remember waking up earlier from it?",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 418,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 418,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The tests went alright; I can successfully transfer you to the computer world! Let\u2019s move to my lab.",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 419,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 419,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "${name}, you will transfer into the computer world and hack into SilentSpectra\u2019s network.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 420,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 420,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You will literally be the Stegware!",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 421,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 421,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But be careful, if you get caught by their anti-malware and be put into quarantine, you will never be able to get back to the real world. ",
+        "background": "lab/default",
+        "emotion": "default",
+        "next": 422,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 422,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They used steganography on us! We will use steganography against them! ",
+        "background": "lab/default",
+        "emotion": "default",
+        "next": 423,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 423,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "According to my research, it is very commonly used to get into systems unnoticed. But you will need to do it right. ",
+        "background": "lab/default",
+        "emotion": "happy",
+        "next": 424,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 424,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Listen carefully\u2026 The plan is as follows\u2026",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 425,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 425,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "In the first place, just like stealing treasure from a museum, you need to get in and out undetected.",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 426,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 426,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "To get in, you will need to bypass their security system scanning for malware. ",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 427,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 427,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Use steganography to hide yourself, but not fully. ",
+        "background": "lab/plan/phase-1",
+        "emotion": "confident",
+        "next": 428,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 428,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Remember, you ARE the malware, meaning that if a part of you is not visible, you will be stuck hidden forever, because you will never be executed.",
+        "background": "lab/plan/phase-1",
+        "emotion": "confident",
+        "next": 429,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 429,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The best strategy is to hide yourself completely and have only a small script called a bootstrap that is going to extract you from the object you are hiding in. ",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 430,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 430,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Next up is planting a code that polls for images on our account on X.",
+        "background": "lab/plan/phase-2",
+        "emotion": "default",
+        "next": 431,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 431,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Indeed. I will post images containing scripts on X. That way, we can control the system from outside.",
+        "background": "lab/plan/phase-2",
+        "emotion": "default",
+        "next": 432,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 432,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Here is the seed for the plant. Take good care of it.",
+        "background": "lab/plan/phase-2-seed",
+        "emotion": "happy",
+        "next": 433,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 433,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Lastly, you should get out of the system safely so you can come back to the real world. Please take some sensitive information with you. ",
+        "background": "lab/plan/phase-3",
+        "emotion": "confident",
+        "next": 434,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 434,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We will not be able to communicate with you once you are in, so you will be on your own. ",
+        "background": "lab/plan/phase-3",
+        "emotion": "default",
+        "next": 435,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 435,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "A beautiful plan isn\u2019t it?",
+        "background": "lab/default",
+        "emotion": "confident",
+        "choices": [
+            {
+                "text": "Yes ma\u2019am!",
+                "destination_id": 438
+            },
+            {
+                "text": "Please repeat the plan",
+                "destination_id": 436
+            },
+            {
+                "text": "Just as beautiful as you <3",
+                "destination_id": 437
+            }
+        ],
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 436,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Didn\u2019t you pay attention? Well, here is a recap.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 424,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 437,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Stay focused!",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 438,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 438,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world.",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 500,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 500,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am on my own now. My choices really matter now.",
+        "background": "pc-world/transfer-inside",
+        "emotion": "default",
+        "next": 501,
+        "location": "The computer world"
+    },
+    {
+        "id": 501,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phase 1: get in. I am literally data on a computer now.",
+        "background": "pc-world/default",
+        "emotion": "default",
+        "next": 502,
+        "location": "The computer world"
+    },
+    {
+        "id": 502,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I need to make sure the anti-malware systems of SilentSpectra cannot find me. I will\u2026",
+        "background": "pc-world/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Use cryptography",
+                "destination_id": 503
+            },
+            {
+                "text": "Use steganography",
+                "destination_id": 520
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 503,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, I have decrypted myself and send an email to Agent T. with myself attached.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 504,
+        "location": "The computer world"
+    },
+    {
+        "id": 504,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 505,
+        "location": "The computer world"
+    },
+    {
+        "id": 505,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "angry",
+        "next": 506,
+        "location": "The computer world"
+    },
+    {
+        "id": 506,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, but something encrypted is attached. ",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 507,
+        "location": "The computer world"
+    },
+    {
+        "id": 507,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I cannot guarantee that you have no means of harm, since I cannot read the encrypted data.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 508,
+        "location": "The computer world"
+    },
+    {
+        "id": 508,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Therefore you will be quarantined!",
+        "background": "pc-world/aegis/encrypted-email-quarantine",
+        "emotion": "angry",
+        "next": 509,
+        "location": "The computer world"
+    },
+    {
+        "id": 509,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "background": "game-over/quarantined",
+        "emotion": "default",
+        "points": -10,
+        "next": 510,
+        "location": "The computer world"
+    },
+    {
+        "id": 510,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 the message within encrypted data is hidden, but the existence of it is not.",
+        "background": "game-over/quarantined",
+        "emotion": "default",
+        "next": 511,
+        "location": "The computer world"
+    },
+    {
+        "id": 511,
+        "character": "GAME",
+        "type": "QUESTION",
+        "content": "Do you want to try again from phase 1 of the final mission?",
+        "background": "game-over/black-screen",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 500
+            },
+            {
+                "text": "No",
+                "destination_id": 700
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 520,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Which of the following images shall I attach to the email to Agent T.?",
+        "background": "pc-world/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Image 1",
+                "destination_id": 521
+            },
+            {
+                "text": "Image 2",
+                "destination_id": 523
+            },
+            {
+                "text": "Image 3",
+                "destination_id": 524
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 521,
+        "character": "player",
+        "type": "TEXT",
+        "content": "An image with a lot of different colours would have worked best, since there we can make use of that redundant information.",
+        "background": "pc-world/images/selected-1",
+        "emotion": "default",
+        "points": 0,
+        "next": 522,
+        "location": "The computer world"
+    },
+    {
+        "id": 522,
+        "character": "player",
+        "type": "TEXT",
+        "content": "But I will try this image anyway.",
+        "background": "pc-world/images/selected-1",
+        "emotion": "default",
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 523,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This image will fit our needs perfectly!",
+        "background": "pc-world/images/selected-2",
+        "emotion": "default",
+        "points": 10,
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 524,
+        "character": "player",
+        "type": "TEXT",
+        "content": "A bigger image can contain more data. It is hard to hide myself in here without altering the visibility of the image.",
+        "background": "pc-world/images/selected-3",
+        "emotion": "default",
+        "points": 5,
+        "next": 525,
+        "location": "The computer world"
+    },
+    {
+        "id": 525,
+        "character": "player",
+        "type": "TEXT",
+        "content": "But I will try this image anyway.",
+        "background": "pc-world/images/selected-3",
+        "emotion": "default",
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 530,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now that I got an image, I need to hide myself in it.",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "next": 531,
+        "location": "The computer world"
+    },
+    {
+        "id": 531,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Where in the image should I hide?",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "At the start of the file",
+                "destination_id": 535
+            },
+            {
+                "text": "At the end of the file",
+                "destination_id": 535
+            },
+            {
+                "text": "Replace the most significant bits by me",
+                "destination_id": 550
+            },
+            {
+                "text": "Replace the least significant bits by me",
+                "destination_id": 580
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 535,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "next": 536,
+        "location": "The computer world"
+    },
+    {
+        "id": 536,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 537,
+        "location": "The computer world"
+    },
+    {
+        "id": 537,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "angry",
+        "next": 538,
+        "location": "The computer world"
+    },
+    {
+        "id": 538,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 539,
+        "location": "The computer world"
+    },
+    {
+        "id": 539,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The image looks highly altered. A lot of redundant data seems to be put together.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 540,
+        "location": "The computer world"
+    },
+    {
+        "id": 540,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Therefore, I cannot guarantee that you have no means of harm.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 541,
+        "location": "The computer world"
+    },
+    {
+        "id": 541,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You will be quarantined!",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "angry",
+        "next": 542,
+        "location": "The computer world"
+    },
+    {
+        "id": 542,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "points": -10,
+        "next": 543,
+        "location": "The computer world"
+    },
+    {
+        "id": 543,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hmm\u2026 putting a data object at the very start or end would be very suspicious.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "next": 544,
+        "location": "The computer world"
+    },
+    {
+        "id": 544,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It can easily be detected. I should try to spread the data throughout the file more next time.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "next": 511,
+        "location": "The computer world"
+    },
+    {
+        "id": 550,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "How will I hide myself within these most significant bits?",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "points": 5,
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 551
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small readable script that extracts myself",
+                "destination_id": 570
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 551,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 552,
+        "location": "The computer world"
+    },
+    {
+        "id": 552,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 553,
+        "location": "The computer world"
+    },
+    {
+        "id": 553,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "angry",
+        "next": 554,
+        "location": "The computer world"
+    },
+    {
+        "id": 554,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 555,
+        "location": "The computer world"
+    },
+    {
+        "id": 555,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The colours of the image look so weird, as if they are not the right colours.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 556,
+        "location": "The computer world"
+    },
+    {
+        "id": 556,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "But maybe that is just a new hype or art trend that I am not aware of.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 557,
+        "location": "The computer world"
+    },
+    {
+        "id": 557,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You are lucky! I will let you through this time.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "broken",
+        "next": 558,
+        "location": "The computer world"
+    },
+    {
+        "id": 558,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phew! I'm through, but it would have been better to hide in the least significant bits of the image\u2026",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 559,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 559,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That way, the colours are (seemingly) not altered as much.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 560,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 560,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now I should wait until Agent T. opens the image of the email that I am part of.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 561,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 561,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 562,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 562,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 563,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 563,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Agent T. opened the image but I am still stuck in the image\u2026",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 564,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 564,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Their computer system does not see me, the Stegware, and can thus never execute me\u2026",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 565,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 565,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am stuck in this image forever, because nothing gets me out.",
+        "background": "game-over/stuck-in-image",
+        "emotion": "default",
+        "next": 566,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 566,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "background": "game-over/stuck-in-image",
+        "emotion": "default",
+        "points": -10,
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 570,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 571,
+        "location": "The computer world"
+    },
+    {
+        "id": 571,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "angry",
+        "next": 572,
+        "location": "The computer world"
+    },
+    {
+        "id": 572,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 573,
+        "location": "The computer world"
+    },
+    {
+        "id": 573,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The colours of the image look so weird, as if they are not the right colours.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 574,
+        "location": "The computer world"
+    },
+    {
+        "id": 574,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "But maybe that is just a new hype or art trend that I am not aware of.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 575,
+        "location": "The computer world"
+    },
+    {
+        "id": 575,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You are lucky! I will let you through this time.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "broken",
+        "next": 576,
+        "location": "The computer world"
+    },
+    {
+        "id": 576,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Pfeww! I am through, but I could have better hidden in the least significant bits of the image\u2026",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 577,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 577,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That way, the colours are not altered much.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 596,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 580,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "How will I hide myself within these least significant bits?",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "points": 10,
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 581
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small readable script that extracts myself",
+                "destination_id": 590
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 581,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 582,
+        "location": "The computer world"
+    },
+    {
+        "id": 582,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 583,
+        "location": "The computer world"
+    },
+    {
+        "id": 583,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "angry",
+        "next": 584,
+        "location": "The computer world"
+    },
+    {
+        "id": 584,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 585,
+        "location": "The computer world"
+    },
+    {
+        "id": 585,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I do not see anything suspicious, you may pass through.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "broken",
+        "next": 586,
+        "location": "The computer world"
+    },
+    {
+        "id": 586,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Good!",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 560,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 590,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 591,
+        "location": "The computer world"
+    },
+    {
+        "id": 591,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 592,
+        "location": "The computer world"
+    },
+    {
+        "id": 592,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "angry",
+        "next": 593,
+        "location": "The computer world"
+    },
+    {
+        "id": 593,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 594,
+        "location": "The computer world"
+    },
+    {
+        "id": 594,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I do not see anything suspicious, you may pass through.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "broken",
+        "next": 595,
+        "location": "The computer world"
+    },
+    {
+        "id": 595,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Good!",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 596,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 596,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now I should wait until Agent T. opens the attachment, which runs the extract script to extract myself.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 597,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 597,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 598,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 598,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "network/extracted-from-email",
+        "emotion": "default",
+        "next": 599,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 599,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Great! Agent T. opened the image and I got extracted. I am fully free in the SilentSpectra network now!",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 600,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 600,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phase 1 of the mission finished! Now let\u2019s continue to phase 2.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 601,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 601,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "What was phase 2 again?",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Plant the seed",
+                "destination_id": 603
+            },
+            {
+                "text": "Water the plant",
+                "destination_id": 602
+            },
+            {
+                "text": "Harvest the plant",
+                "destination_id": 602
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 602,
+        "character": "player",
+        "type": "TEXT",
+        "content": "No, it can\u2019t be. That doesn\u2019t even mean anything.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 601,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 603,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Yes, I will plant the seed Dr. Glitchwell gave to me.",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 604,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 604,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The script will poll for new pictures on our account on X and download the image.",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 605,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 605,
+        "character": "player",
+        "type": "TEXT",
+        "content": "We will hide commands in these images, so that we can control this system from outside.",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 606,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 606,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Alright, the seed is planted. Let\u2019s enter phase 3 of the mission and get out.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 607,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 607,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Boss M. told be to bring some sensitive data along. I will bring\u2026",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Holiday images from Agent T.",
+                "destination_id": 608
+            },
+            {
+                "text": "Stego research and their private keys",
+                "destination_id": 609
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 608,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 I am not sure if Boss M. will be happy with that data.",
+        "background": "network/default",
+        "emotion": "default",
+        "points": -2,
+        "next": 607,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 609,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, I found this data!",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 610,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 610,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Now, how do I get out?",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Use steganography to hide myself and the information in a PDF file on the way out",
+                "destination_id": 640
+            },
+            {
+                "text": "Don\u2019t do anything as the way out of the system is not protected",
+                "destination_id": 620
+            },
+            {
+                "text": "Use cryptography to hide the sensitive files I'm carrying",
+                "destination_id": 630
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 620,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "background": "network/velos/no-protection",
+        "emotion": "default",
+        "next": 621,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 621,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "background": "network/velos/no-protection",
+        "emotion": "angry",
+        "next": 622,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 622,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I see some private keys are in your possession, but the context is never right to let them out.",
+        "background": "network/velos/no-protection",
+        "emotion": "default",
+        "next": 623,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 623,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Therefore, you may not leave this system!",
+        "background": "network/velos/no-protection",
+        "emotion": "stop",
+        "next": 634,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 630,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "background": "network/velos/encrypted",
+        "emotion": "default",
+        "next": 631,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 631,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "background": "network/velos/encrypted",
+        "emotion": "angry",
+        "next": 632,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 632,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "You are completely encrypted. I can therefore not guarantee that you are carrying sensitive data.",
+        "background": "network/velos/encrypted",
+        "emotion": "default",
+        "next": 633,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 633,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "So, you may not leave this system!",
+        "background": "network/velos/encrypted",
+        "emotion": "stop",
+        "next": 634,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 634,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "background": "game-over/quarantined-network",
+        "emotion": "default",
+        "points": -10,
+        "next": 635,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 635,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 I need to outsmart Velos, the Data Leakage Protection.",
+        "background": "game-over/quarantined-network",
+        "emotion": "default",
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 640,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 641,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 641,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "background": "network/velos/hidden",
+        "emotion": "angry",
+        "next": 642,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 642,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "You seem to be an unharmful PDF file that is going to be uploaded on the internet.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 643,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 643,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "That is no weird action. Agent P. probably just wants to share something.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 644,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 644,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I will let you through.",
+        "background": "network/velos/hidden",
+        "emotion": "through",
+        "next": 645,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 645,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Great! I got out of the system and I am free on the internet now.",
+        "background": "internet/online",
+        "emotion": "default",
+        "points": 10,
+        "next": 750,
+        "location": "The internet"
+    },
+    {
+        "id": 700,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "next": 701,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 701,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Have you found ${name} already?",
+        "background": "lab/looking-at-screen",
+        "emotion": "angry",
+        "next": 702,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 702,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "No, I haven\u2019t. It seems that ${name} is stuck in the system. I cannot get them out.",
+        "background": "lab/looking-at-screen",
+        "emotion": "shocked",
+        "next": 703,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 703,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "He will not wake up now from by Pixinator.",
+        "background": "lab/looking-at-screen",
+        "emotion": "interesting",
+        "next": 704,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 704,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have lost our hero. May ${name} rest in peace.",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "points": -20,
+        "next": 760,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 750,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "next": 751,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 751,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Amazing! I have found ${name} on the internet. I will transfer him back to life now.",
+        "background": "lab/looking-at-screen",
+        "emotion": "shocked",
+        "next": 752,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 752,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Congratulations! You have made it back alive.",
+        "background": "lab/blurry",
+        "emotion": "confident",
+        "next": 753,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 753,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I see you brought some sensitive data that I wanted to see along. Good job!",
+        "background": "lab/in-pixinator",
+        "emotion": "default",
+        "next": 754,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 754,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We will now be able to fully control SilentSpectra.",
+        "background": "lab/in-pixinator",
+        "emotion": "angry",
+        "next": 755,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 755,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yep, and I have upgraded our system security with strong StegAnalysis and steganography prevention tools.",
+        "background": "lab/party",
+        "emotion": "interesting",
+        "next": 756,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 756,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "We will also not open a suspicious attachment of an email anymore.",
+        "background": "lab/party",
+        "emotion": "happy",
+        "next": 757,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 757,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You are a real steganography master!",
+        "background": "lab/party",
+        "emotion": "confident",
+        "points": 30,
+        "next": 760,
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    },
+    {
+        "id": 760,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "The end.",
+        "background": "end/end-screen",
+        "emotion": "default",
+        "location": "(HQ) Dr. Glitchwell\u2019s lab"
+    }
+]

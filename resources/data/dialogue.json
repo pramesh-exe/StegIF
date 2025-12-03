@@ -1,0 +1,3305 @@
+[
+    {
+        "id": 100,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "System online! Vital signs normal. Are you with me?",
+        "background": "lab/blurry",
+        "emotion": "happy",
+        "next": 101,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 101,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Quick system check. Do you remember your security handle?",
+        "background": "lab/in-pixinator",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "PixelPhantom",
+                "destination_id": 102
+            },
+            {
+                "text": "ByteBandit",
+                "destination_id": 102
+            },
+            {
+                "text": "007",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent Jan-Kees",
+                "destination_id": 102
+            },
+            {
+                "text": "ZeroTrace",
+                "destination_id": 102
+            },
+            {
+                "text": "Sudo",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent B.",
+                "destination_id": 102
+            },
+            {
+                "text": "Stella",
+                "destination_id": 102
+            },
+            {
+                "text": "Joe",
+                "destination_id": 102
+            }
+        ],
+        "next": 102,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 102,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Excellent. Welcome back, ${name}. The simulation initialization was successful.",
+        "background": "lab/in-pixinator",
+        "emotion": "happy",
+        "next": 103,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 103,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Are you ready for the simulation?",
+        "background": "lab/in-pixinator",
+        "emotion": "happy",
+        "choices": [
+            {
+                "text": "Ready!",
+                "destination_id": 104
+            },
+            {
+                "text": "What simulation?",
+                "destination_id": 105
+            }
+        ],
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 104,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "That's the spirit! You are the first to test the Pixinator 3000.",
+        "background": "lab/in-pixinator",
+        "emotion": "interesting",
+        "next": 106,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 105,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The Pixinator! My invention to digitize humans into data streams.",
+        "background": "lab/in-pixinator",
+        "emotion": "shocked",
+        "next": 106,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 106,
+        "character": "HQ Security",
+        "type": "TEXT",
+        "content": "ALERT! ALERT! DATA BREACH DETECTED!",
+        "background": "lab/alert",
+        "emotion": "default",
+        "next": 107,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 107,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Bad news team. DeadPixel has bypassed our firewalls again.",
+        "background": "lab/alert",
+        "emotion": "angry",
+        "next": 108,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 108,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Impossible! I encrypted our data with the toughest algorithms!",
+        "background": "lab/alert",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "Did you check for hidden data?",
+                "destination_id": 130
+            },
+            {
+                "text": "Encryption isn't enough",
+                "destination_id": 110
+            },
+            {
+                "text": "Maybe they stole the keys",
+                "destination_id": 120
+            }
+        ],
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 110,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Technically true, but my encryption is mathematically sound.",
+        "background": "lab/alert",
+        "emotion": "tired",
+        "next": 139,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 120,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Don't say that... that would be a disaster.",
+        "background": "lab/alert",
+        "emotion": "tired",
+        "next": 139,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 130,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Encryption scrambles the message so it looks like garbage to anyone without the key.",
+        "background": "lab/explain/cryptography-1",
+        "emotion": "default",
+        "next": 131,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 131,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It protects the *content* of the message. If they intercept it, they can't read it.",
+        "background": "lab/explain/cryptography-2",
+        "emotion": "happy",
+        "next": 132,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 132,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "However, encryption makes it obvious that a secret exists. It looks suspicious.",
+        "background": "lab/explain/cryptography-3",
+        "emotion": "interesting",
+        "next": 133,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 133,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Steganography is different. It hides the *existence* of the message entirely.",
+        "background": "lab/explain/cryptography-4",
+        "emotion": "interesting",
+        "next": 134,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 134,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "If DeadPixel is using steganography, we wouldn't even know they are communicating.",
+        "background": "lab/explain/cryptography-5",
+        "emotion": "default",
+        "next": 135,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 135,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "They could hide data in innocent-looking files, like images or audio.",
+        "background": "lab/explain/cryptography-6",
+        "emotion": "default",
+        "next": 139,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 139,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Enough theory. To the Control Room. We need a situation report.",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 140,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 140,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Listen up. The situation is critical.",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 141,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 141,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "DeadPixel is coordinating attacks, but we can't find their messages.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 142,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 142,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Our network scanners show zero encrypted traffic. Yet, they are synchronized.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 143,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 143,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Covert communication channels...",
+        "background": "control-room/default",
+        "emotion": "shocked",
+        "next": 144,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 144,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "Exactly. How are they doing it?",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "Telepathy?",
+                "destination_id": 145
+            },
+            {
+                "text": "Hiding messages in public images",
+                "destination_id": 145
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 145,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "We suspect digital steganography. Hiding secret data inside public files.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 146,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 146,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "Their social media feeds are full of cat pictures and memes. It looks normal.",
+        "background": "control-room/social-media",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Any leads?",
+                "destination_id": 147
+            },
+            {
+                "text": "We are doomed!",
+                "destination_id": 147
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 147,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "We detained Agent P., a suspected DeadPixel operative.",
+        "background": "control-room/tracked",
+        "emotion": "confident",
+        "next": 148,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 148,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "We secured his physical hideout. We need evidence of their methods.",
+        "background": "control-room/tracked",
+        "emotion": "confident",
+        "next": 149,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 149,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "${name}, search Agent P.'s room. Look for clues on how they hide data.",
+        "background": "control-room/tracked",
+        "emotion": "default",
+        "next": 150,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 150,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Dr. Voxel, stand by for digital analysis of whatever ${name} finds.",
+        "background": "control-room/tracked",
+        "emotion": "default",
+        "next": 151,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 151,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Understood!",
+        "background": "control-room/tracked",
+        "emotion": "happy",
+        "choices": [
+            {
+                "text": "Start investigation",
+                "destination_id": 190
+            },
+            {
+                "text": "Wait a moment",
+                "destination_id": 152
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 152,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "We don't have time to waste.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "Nature calls",
+                "destination_id": 160
+            },
+            {
+                "text": "I need coffee",
+                "destination_id": 170
+            },
+            {
+                "text": "Just checking my phone",
+                "destination_id": 180
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 160,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Go. Now.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 170,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Dr. Voxel, your simulation is making the agent lazy.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 171,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 171,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Fascinating side effect...",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 180,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Put the phone away and focus on the threat!",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 190,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 190,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Deploying you to the hideout now.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 200,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I'm in Agent P.'s hideout. It looks like a standard tech workspace.",
+        "background": "hideout/default",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 201,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I should send evidence to Glitchwell.",
+        "background": "hideout/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Check the Computer",
+                "destination_id": 210
+            },
+            {
+                "text": "Check the Trash Bin",
+                "destination_id": 220
+            },
+            {
+                "text": "Check the Bookshelf",
+                "destination_id": 240
+            },
+            {
+                "text": "Call Glitchwell",
+                "destination_id": 280
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 210,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "There are two image files open. They look identical.",
+        "background": "hideout/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "They are duplicates",
+                "destination_id": 211
+            },
+            {
+                "text": "One might hide data",
+                "destination_id": 212
+            },
+            {
+                "text": "Just nice photos",
+                "destination_id": 213
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 211,
+        "character": "player",
+        "type": "TEXT",
+        "content": "They look the same to the naked eye, but in steganography, looks deceive.",
+        "background": "hideout/same-picture",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 212,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Exactly. One could be the 'Cover' and the other the 'Stego-Object'.",
+        "background": "hideout/images",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 213,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Don't get distracted. We are looking for hidden malware or messages.",
+        "background": "hideout/images",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 220,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I found a crumpled diagram in the bin.",
+        "background": "hideout/diagram",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Does it explain the algorithm?",
+                "destination_id": 221
+            },
+            {
+                "text": "It looks technical",
+                "destination_id": 221
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 221,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Glitchwell is calling me.",
+        "background": "hideout/diagram",
+        "emotion": "default",
+        "next": 222,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 222,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Hey ${name}! Found anything interesting yet?",
+        "background": "hideout/diagram",
+        "emotion": "calling-happy",
+        "next": 223,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 223,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Send me a scan of that diagram.",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 224,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 224,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Ah, this is the classic Steganography Model.",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 225,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 225,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It shows a 'Cover Image' + 'Hidden Message' + 'Key' = 'Stego-Object'.",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 226,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 226,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The 'Cover' is the innocent file (like a JPEG). The 'Message' is the payload.",
+        "background": "hideout/diagram",
+        "emotion": "calling-default",
+        "next": 227,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 227,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The 'Key' ensures only the intended recipient can extract the message.",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 228,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 228,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Without the key,  the file just looks like a normal picture.",
+        "background": "hideout/diagram",
+        "emotion": "calling-interesting",
+        "next": 229,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 229,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Admin Zero needs me. Keep looking!",
+        "background": "hideout/diagram",
+        "emotion": "calling-shocked",
+        "next": 230,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 230,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Wait, there's a newspaper here too. 'Cyber criminals hiding malware in memes'.",
+        "background": "hideout/newspaper",
+        "emotion": "default",
+        "next": 231,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 231,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This confirms they use images to deliver malicious code.",
+        "background": "hideout/newspaper",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 240,
+        "character": "player",
+        "type": "TEXT",
+        "content": "A shelf full of cybersecurity books. Let's read the titles",
+        "background": "hideout/books",
+        "emotion": "default",
+        "next": 241,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 241,
+        "character": "player",
+        "type": "TEXT",
+        "content": "'The Art of Invisibility'. It explains Steganography vs Cryptography.",
+        "background": "hideout/book-1",
+        "emotion": "default",
+        "next": 242,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 242,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Steganography hides the *fact* that communication is happening.",
+        "background": "hideout/book-1",
+        "emotion": "default",
+        "next": 243,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 243,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Cryptography hides the *meaning* of the communication.",
+        "background": "hideout/book-1-next",
+        "emotion": "default",
+        "next": 244,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 244,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Another book: 'Historical Secrets'.",
+        "background": "hideout/book-2",
+        "emotion": "default",
+        "next": 245,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 245,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It mentions invisible ink and microdots used in WW2 spies.",
+        "background": "hideout/book-2",
+        "emotion": "default",
+        "next": 246,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 246,
+        "character": "player",
+        "type": "TEXT",
+        "content": "'Modern Threats': Terrorists using images to coordinate attacks covertly.",
+        "background": "hideout/book-3",
+        "emotion": "default",
+        "next": 247,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 247,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This is serious. It's not just messages; it's active coordination.",
+        "background": "hideout/book-3",
+        "emotion": "default",
+        "next": 201,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 280,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Hello ${name}! I am so relieved to hear from you. Are you done investigating?",
+        "background": "hideout/default",
+        "emotion": "calling-happy",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 281
+            },
+            {
+                "text": "No",
+                "destination_id": 201
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 281,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "What is the biggest threat?",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "choices": [
+            {
+                "text": "Messy room",
+                "destination_id": 282
+            },
+            {
+                "text": "Steganography",
+                "destination_id": 283
+            },
+            {
+                "text": "Cryptography",
+                "destination_id": 284
+            },
+            {
+                "text": "Firewalls",
+                "destination_id": 285
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 282,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Focus, agent. The cyber threat.",
+        "background": "hideout/default",
+        "emotion": "calling-tired",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 283,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Correct. The hidden data.",
+        "background": "hideout/default",
+        "emotion": "calling-default",
+        "next": 290,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 284,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "No, we know they use crypto. The *hiding* is the issue.",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 285,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Not relevant right now.",
+        "background": "hideout/default",
+        "emotion": "calling-happy",
+        "next": 281,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 290,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Send me the item that shows *how* they are hiding the data.",
+        "background": "hideout/default",
+        "emotion": "calling-interesting",
+        "next": 291,
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 291,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Sending item...",
+        "background": "hideout/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "The Diagram",
+                "destination_id": 300
+            },
+            {
+                "text": "The Books",
+                "destination_id": 310
+            },
+            {
+                "text": "The Digital Images",
+                "destination_id": 320
+            }
+        ],
+        "location": "Agent P.\u2019s Hideout"
+    },
+    {
+        "id": 300,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Receiving the diagram. Let's analyze the workflow.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "happy",
+        "next": 301,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 301,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "This proves they use a 'Keyed Steganography' system.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "default",
+        "next": 302,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 302,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The 'Carrier' is likely a JPEG or PNG image.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 303,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 303,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The 'Stego-Key' seeds the algorithm to scatter bits randomly.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 304,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 304,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "This prevents us from detecting patterns easily.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 305,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 305,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "If we don't know the key or the algorithm, the hidden message is safe.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 306,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 306,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "We need to perform 'Steganalysis' - the art of detecting hidden data.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "interesting",
+        "next": 307,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 307,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "I need the actual files to perform Steganalysis.",
+        "background": "control-room/analyse/diagram",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 310,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Books provide theory, but we need practical evidence.",
+        "background": "control-room/analyse/books",
+        "emotion": "happy",
+        "next": 311,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 311,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Yes, steganography is 'covered writing'.",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 312,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 312,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It dates back to ancient Greece (wax tablets).",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 313,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 313,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Today, we use digital media files because they are large and noisy.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 314,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 314,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "An image has millions of pixels. Plenty of room to hide secrets.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 315,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 315,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Agent P. is studying this to bypass our filters.",
+        "background": "control-room/analyse/books",
+        "emotion": "interesting",
+        "next": 316,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 316,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Go back and get the actual digital files from the computer.",
+        "background": "control-room/analyse/books",
+        "emotion": "default",
+        "next": 200,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 320,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "I have the images. Running Steganalysis tools now. What should I check first?",
+        "background": "control-room/analyse/images-question",
+        "emotion": "interesting",
+        "choices": [
+            {
+                "text": "File Size",
+                "destination_id": 321
+            },
+            {
+                "text": "Metadata",
+                "destination_id": 325
+            },
+            {
+                "text": "Pixel Bit Values",
+                "destination_id": 330
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 321,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "File sizes are identical. Good steganography doesn't change the size.",
+        "background": "control-room/analyse/images/file-size",
+        "emotion": "default",
+        "next": 322,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 322,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "This is typical. The hidden data replaces existing bits rather than adding new ones.",
+        "background": "control-room/analyse/images/file-size",
+        "emotion": "default",
+        "next": 320,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 325,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Metadata (EXIF) looks clean. No hidden comments.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 326,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 326,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Sometimes amateurs hide text in the metadata comments, but Agent P. is a pro.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 327,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 327,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "He is manipulating the actual visual data.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "interesting",
+        "next": 328,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 328,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "We need to look deeper. At the bits.",
+        "background": "control-room/analyse/images/metadata",
+        "emotion": "happy",
+        "next": 320,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 330,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Analyzing the Least Significant Bits (LSB) of the pixels...",
+        "background": "control-room/analyse/images/bits",
+        "emotion": "happy",
+        "next": 331,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 331,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "BINGO! Look at this statistical anomaly!",
+        "background": "control-room/analyse/images/bits",
+        "emotion": "shocked",
+        "next": 332,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 332,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "The LSBs are fluctuating wildly.",
+        "background": "control-room/analyse/images/bits-highlighted",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "What is an LSB?",
+                "destination_id": 333
+            },
+            {
+                "text": "I see the pattern!",
+                "destination_id": 345
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 333,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Digital images are made of pixels. Each pixel has color numbers (RGB).",
+        "background": "control-room/analyse/images/explain/lsb-1",
+        "emotion": "interesting",
+        "next": 334,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 334,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "A number like 255 is 11111111 in binary. The last '1' is the Least Significant Bit.",
+        "background": "control-room/analyse/images/explain/lsb-1",
+        "emotion": "interesting",
+        "choices": [
+            {
+                "text": "Why does it matter?",
+                "destination_id": 335
+            },
+            {
+                "text": "Understood.",
+                "destination_id": 345
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 335,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "If I change the first bit, the color changes drastically. Visible distortion.",
+        "background": "control-room/analyse/images/explain/lsb-2",
+        "emotion": "interesting",
+        "next": 336,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 336,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "But if I change the last bit (LSB), the color changes by only 1 shade.",
+        "background": "control-room/analyse/images/explain/lsb-3",
+        "emotion": "interesting",
+        "next": 337,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 337,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The human eye cannot see the difference between Red 254 and Red 255.",
+        "background": "control-room/analyse/images/explain/lsb-4",
+        "emotion": "interesting",
+        "next": 338,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 338,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "So, we can replace that last bit with our secret data without anyone seeing it.",
+        "background": "control-room/analyse/images/explain/lsb-5",
+        "emotion": "interesting",
+        "next": 339,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 339,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Agent P. replaced the LSBs of this image with ASCII code!",
+        "background": "control-room/analyse/images/explain/lsb-5",
+        "emotion": "shocked",
+        "next": 345,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 345,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Extracting the LSB plane now...",
+        "background": "control-room/analyse/images/bits-highlighted-stream",
+        "emotion": "default",
+        "next": 346,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 346,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It's not just noise. It's text.",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "default",
+        "next": 347,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 347,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "He didn't encrypt the message before hiding it. Rookie mistake.",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "happy",
+        "next": 348,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 348,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Usually, you encrypt data first, THEN hide it (Stego + Crypto).",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "happy",
+        "next": 349,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 349,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Because he was lazy,  we can read their plan.",
+        "background": "control-room/analyse/images/bits-diagram-reminder",
+        "emotion": "default",
+        "next": 350,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 350,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "This confirms they are using LSB Steganography.",
+        "background": "control-room/analyse/images/bits-highlighted-stream-letters",
+        "emotion": "default",
+        "next": 351,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 351,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "What is the danger of this technique?",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Covert Chat",
+                "destination_id": 352
+            },
+            {
+                "text": "Hidden Malware",
+                "destination_id": 365
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 352,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Exactly. They can chat on public forums right under our noses.",
+        "background": "control-room/social-media",
+        "emotion": "shocked",
+        "next": 353,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 353,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "But there is a bigger risk than just chatting.",
+        "background": "control-room/social-media",
+        "emotion": "interesting",
+        "next": 354,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 354,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "They can hide executable code (Malware) inside the image.",
+        "background": "control-room/analyse/images",
+        "emotion": "interesting",
+        "next": 355,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 355,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "AND they can perform 'Data Exfiltration'.",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 356,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 356,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Imagine they steal our private encryption keys.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 357,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 357,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Our firewall stops them from sending the keys out as text.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 358,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 358,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "But if they hide the keys inside a holiday photo...",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 359,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 359,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Would our Intrusion Detection System (IDS) stop a photo?",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "What is an IDS?",
+                "destination_id": 360
+            },
+            {
+                "text": "It would miss it",
+                "destination_id": 362
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 360,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "IDS looks for known attack signatures and suspicious traffic.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 361,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 361,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "An image file looks valid to the IDS. It doesn't check the pixels.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 362,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 362,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "So they can smuggle stolen data out inside images. That's Data Exfiltration.",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "next": 380,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 365,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Yes! It's called 'Stegware'.",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 366,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 366,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Malware that hides its payload inside media files to avoid antivirus detection.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 367,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 367,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "But there is also 'Data Exfiltration'.",
+        "background": "control-room/explain/stolen-private-keys",
+        "emotion": "shocked",
+        "next": 368,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 368,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "They can steal our sensitive files and smuggle them out inside photos.",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "next": 369,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 369,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "Our Firewall would let the photo pass.",
+        "background": "control-room/analyse/images",
+        "emotion": "shocked",
+        "choices": [
+            {
+                "text": "Why?",
+                "destination_id": 370
+            },
+            {
+                "text": "I get it",
+                "destination_id": 372
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 370,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Firewalls check headers and protocols, not pixel values.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 371,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 371,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "To a firewall, it's just a cute cat picture. To us, it's a data leak.",
+        "background": "control-room/explain/ids",
+        "emotion": "interesting",
+        "next": 372,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 372,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "We need to upgrade our defenses to include Steganalysis.",
+        "background": "control-room/analyse/images",
+        "emotion": "default",
+        "next": 373,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 373,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "But first,  let's decode the message Agent P. was hiding.",
+        "background": "control-room/analyse/images",
+        "emotion": "happy",
+        "next": 374,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 374,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "I've isolated the LSBs. It forms a binary string.",
+        "background": "control-room/social-media",
+        "emotion": "default",
+        "next": 375,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 375,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Convert the binary to ASCII text.",
+        "background": "control-room/social-media",
+        "emotion": "interesting",
+        "next": 380,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 380,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "${name}, read the hidden message. What is the target platform?",
+        "background": "control-room/hidden-message",
+        "emotion": "default",
+        "next": 381,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 381,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "Decoded text: 01100110 01100001 01100011 01100101...",
+        "background": "control-room/hidden-message",
+        "emotion": "confident",
+        "choices": [
+            {
+                "text": "Fire",
+                "destination_id": 382
+            },
+            {
+                "text": "Cash",
+                "destination_id": 382
+            },
+            {
+                "text": "Iron",
+                "destination_id": 382
+            },
+            {
+                "text": "Sign",
+                "destination_id": 382
+            },
+            {
+                "text": "Face",
+                "destination_id": 390
+            },
+            {
+                "text": "Four",
+                "destination_id": 382
+            },
+            {
+                "text": "Star",
+                "destination_id": 382
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 382,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Incorrect. Check your ASCII table.",
+        "background": "control-room/hidden-message",
+        "emotion": "shocked",
+        "next": 383,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 383,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "8 bits make 1 character.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "interesting",
+        "next": 384,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 384,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The pattern is in the LSBs.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "default",
+        "next": 385,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 385,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Try again.",
+        "background": "control-room/hidden-message-lsb",
+        "emotion": "default",
+        "next": 381,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 390,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "'Face'... 'Facebook'. They are using Facebook images!",
+        "background": "control-room/analyse/images",
+        "emotion": "interesting",
+        "next": 391,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 391,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Good work. We know the channel now.",
+        "background": "control-room/analyse/images",
+        "emotion": "confident",
+        "next": 400,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 400,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "I've been monitoring their Facebook traffic all night.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 401,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 401,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "It's worse than we thought. They are sending commands to botnets via image uploads.",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 402,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 402,
+        "character": "Dr. Voxel",
+        "type": "QUESTION",
+        "content": "We tracked Agent T. He is the receiver. We need to infiltrate his system.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "choices": [
+            {
+                "text": "We can perform a DDoS attack",
+                "destination_id": 403
+            },
+            {
+                "text": "We can perform USB Drops",
+                "destination_id": 404
+            },
+            {
+                "text": "We can perform spear phishing",
+                "destination_id": 407
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 403,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Too loud. They will just block us.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 405,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 404,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Physical access is impossible.",
+        "background": "control-room/default",
+        "emotion": "tired",
+        "next": 405,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 405,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Think subtly.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 406,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 406,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "We should beat them at their own game. Use Steganography.",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 410,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 407,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Yes. We send a harmless email with a 'poisoned' image attachment.",
+        "background": "control-room/default",
+        "emotion": "interesting",
+        "next": 410,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 410,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Stegware?",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 411,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 411,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Exactly. Malware hidden inside an image using steganography.",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 412,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 412,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "Wait. What is the goal?",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "choices": [
+            {
+                "text": "Take revenge!",
+                "destination_id": 413
+            },
+            {
+                "text": "Find out their methods",
+                "destination_id": 413
+            }
+        ],
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 413,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "We need to steal their encryption keys to decrypt their past messages.",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 414,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 414,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "So we need to Infiltrate -> Steal Keys -> Exfiltrate.",
+        "background": "control-room/default",
+        "emotion": "confident",
+        "next": 415,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 415,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "And we must bypass their Intrusion Detection System (IDS) and Data Leakage Protection (DLP).",
+        "background": "control-room/default",
+        "emotion": "angry",
+        "next": 416,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 416,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Only steganography can bypass both.",
+        "background": "control-room/default",
+        "emotion": "default",
+        "next": 417,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 417,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "${name}, you will simulate the Stegware. I'm digitizing you.",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 418,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 418,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "You will be the hidden payload.",
+        "background": "control-room/default",
+        "emotion": "happy",
+        "next": 419,
+        "location": "(HQ) Control Room"
+    },
+    {
+        "id": 419,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Phase 1: Hiding. You must embed yourself into an image to get past their IDS.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 420,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 420,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "If you are detected as code, they will delete you.",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 421,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 421,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Anti-malware looks for code patterns. It ignores visual noise.",
+        "background": "lab/default",
+        "emotion": "default",
+        "next": 422,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 422,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "You must become the noise.",
+        "background": "lab/default",
+        "emotion": "default",
+        "next": 423,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 423,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Choose a carrier file that has high entropy (randomness) so you blend in.",
+        "background": "lab/default",
+        "emotion": "happy",
+        "next": 424,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 424,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Phase 2: Execution. A small script (stego-loader) will extract you.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 425,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 425,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Once inside, you find the keys.",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 426,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 426,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Phase 3: Exfiltration. This is the hardest part.",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 427,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 427,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Their DLP scans for outgoing sensitive data (like keys).",
+        "background": "lab/plan/phase-1",
+        "emotion": "confident",
+        "next": 428,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 428,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "You must hide the keys inside another image to send them back to us.",
+        "background": "lab/plan/phase-1",
+        "emotion": "confident",
+        "next": 429,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 429,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "If you send the keys as text, the DLP catches you.",
+        "background": "lab/plan/phase-1",
+        "emotion": "default",
+        "next": 430,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 430,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Hide the keys in the LSBs of a meme.",
+        "background": "lab/plan/phase-2",
+        "emotion": "default",
+        "next": 431,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 431,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "I'll monitor our 'honeypot' account for your upload.",
+        "background": "lab/plan/phase-2",
+        "emotion": "default",
+        "next": 432,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 432,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Ready to become a Steganographic Object?",
+        "background": "lab/plan/phase-2-seed",
+        "emotion": "happy",
+        "next": 433,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 433,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Don't get caught. If they sanitize the image, you are deleted.",
+        "background": "lab/plan/phase-3",
+        "emotion": "confident",
+        "next": 434,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 434,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Sanitization (stripping metadata or re-encoding) destroys hidden data.",
+        "background": "lab/plan/phase-3",
+        "emotion": "default",
+        "next": 435,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 435,
+        "character": "Admin Zero",
+        "type": "QUESTION",
+        "content": "Clear?",
+        "background": "lab/default",
+        "emotion": "confident",
+        "choices": [
+            {
+                "text": "Yes ma\u2019am!",
+                "destination_id": 438
+            },
+            {
+                "text": "Please repeat the plan",
+                "destination_id": 436
+            },
+            {
+                "text": "Just as beautiful as you <3",
+                "destination_id": 437
+            }
+        ],
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 436,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Hide in image -> Enter System -> Steal Keys -> Hide Keys in Image -> Exit.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 424,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 437,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Focus on the bits,  not me.",
+        "background": "lab/default",
+        "emotion": "angry",
+        "next": 438,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 438,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Digitize them, Doctor!",
+        "background": "lab/default",
+        "emotion": "confident",
+        "next": 500,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 500,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am now raw data. I need to enter the DeadPixel network.",
+        "background": "pc-world/transfer-inside",
+        "emotion": "default",
+        "next": 501,
+        "location": "The computer world"
+    },
+    {
+        "id": 501,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The Gateway IDS (Sentinel) is scanning incoming emails.",
+        "background": "pc-world/default",
+        "emotion": "default",
+        "next": 502,
+        "location": "The computer world"
+    },
+    {
+        "id": 502,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "How do I get past the scanner?",
+        "background": "pc-world/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Use cryptography",
+                "destination_id": 503
+            },
+            {
+                "text": "Use steganography",
+                "destination_id": 520
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 503,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I encrypt my code and attach myself to the email.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 504,
+        "location": "The computer world"
+    },
+    {
+        "id": 504,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING... DETECTED ENCRYPTED EXECUTABLE.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 505,
+        "location": "The computer world"
+    },
+    {
+        "id": 505,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Policy Violation: Unknown encrypted executables are blocked.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "angry",
+        "next": 506,
+        "location": "The computer world"
+    },
+    {
+        "id": 506,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "I cannot inspect the content, therefore it is deemed unsafe.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 507,
+        "location": "The computer world"
+    },
+    {
+        "id": 507,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Quarantining attachment.",
+        "background": "pc-world/aegis/encrypted-email",
+        "emotion": "default",
+        "next": 508,
+        "location": "The computer world"
+    },
+    {
+        "id": 508,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Access Denied.",
+        "background": "pc-world/aegis/encrypted-email-quarantine",
+        "emotion": "angry",
+        "next": 509,
+        "location": "The computer world"
+    },
+    {
+        "id": 509,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER - Cryptography draws attention.",
+        "background": "game-over/quarantined",
+        "emotion": "default",
+        "points": -10,
+        "next": 510,
+        "location": "The computer world"
+    },
+    {
+        "id": 510,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Encryption hides contents, but not the file itself. The IDS saw a suspicious file.",
+        "background": "game-over/quarantined",
+        "emotion": "default",
+        "next": 511,
+        "location": "The computer world"
+    },
+    {
+        "id": 511,
+        "character": "GAME",
+        "type": "QUESTION",
+        "content": "Try again?",
+        "background": "game-over/black-screen",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 500
+            },
+            {
+                "text": "No",
+                "destination_id": 700
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 520,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I need a 'Carrier' image. Which one is best for hiding data?",
+        "background": "pc-world/images",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Image 1",
+                "destination_id": 521
+            },
+            {
+                "text": "Image 2",
+                "destination_id": 523
+            },
+            {
+                "text": "Image 3",
+                "destination_id": 524
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 521,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Image 1 is a simple logo with flat colors. Hiding data here creates visible noise.",
+        "background": "pc-world/images/selected-1",
+        "emotion": "default",
+        "points": 0,
+        "next": 522,
+        "location": "The computer world"
+    },
+    {
+        "id": 522,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This is risky, but I'll try.",
+        "background": "pc-world/images/selected-1",
+        "emotion": "default",
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 523,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Image 2 is a complex photo. High color variation hides the noise perfectly.",
+        "background": "pc-world/images/selected-2",
+        "emotion": "default",
+        "points": 10,
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 524,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Image 3 is too small (Low Capacity). I cannot fit my code inside.",
+        "background": "pc-world/images/selected-3",
+        "emotion": "default",
+        "points": 5,
+        "next": 525,
+        "location": "The computer world"
+    },
+    {
+        "id": 525,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I'll have to compress myself dangerously.",
+        "background": "pc-world/images/selected-3",
+        "emotion": "default",
+        "next": 530,
+        "location": "The computer world"
+    },
+    {
+        "id": 530,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Carrier selected. Now, where to hide my bits?",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "next": 531,
+        "location": "The computer world"
+    },
+    {
+        "id": 531,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Embedding Strategy:",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "At the start of the file",
+                "destination_id": 535
+            },
+            {
+                "text": "At the end of the file",
+                "destination_id": 535
+            },
+            {
+                "text": "Replace the most significant bits by me",
+                "destination_id": 550
+            },
+            {
+                "text": "Replace the least significant bits by me",
+                "destination_id": 580
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 535,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I'll just tack my code onto the end of the JPG.",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "next": 536,
+        "location": "The computer world"
+    },
+    {
+        "id": 536,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING... MALFORMED FILE STRUCTURE.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 537,
+        "location": "The computer world"
+    },
+    {
+        "id": 537,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The End-of-File marker is followed by unauthorized data.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "angry",
+        "next": 538,
+        "location": "The computer world"
+    },
+    {
+        "id": 538,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "This is a common amateur trick.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 539,
+        "location": "The computer world"
+    },
+    {
+        "id": 539,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Stripping appended data.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 540,
+        "location": "The computer world"
+    },
+    {
+        "id": 540,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "You have been sanitized.",
+        "background": "pc-world/aegis/hide-at-start-or-end",
+        "emotion": "default",
+        "next": 541,
+        "location": "The computer world"
+    },
+    {
+        "id": 541,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Deleted.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "angry",
+        "next": 542,
+        "location": "The computer world"
+    },
+    {
+        "id": 542,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER - Appending data is easily detected.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "points": -10,
+        "next": 543,
+        "location": "The computer world"
+    },
+    {
+        "id": 543,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Steganography must embed data *inside* the pixel values, not outside the file.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "next": 544,
+        "location": "The computer world"
+    },
+    {
+        "id": 544,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Try again.",
+        "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
+        "emotion": "default",
+        "next": 511,
+        "location": "The computer world"
+    },
+    {
+        "id": 550,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I will replace the MSB (Most Significant Bits). This carries 50% of the color value.",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "points": 5,
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 551
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small readable script that extracts myself",
+                "destination_id": 570
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 551,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Injecting into MSB...",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 552,
+        "location": "The computer world"
+    },
+    {
+        "id": 552,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING... VISUAL ANOMALY DETECTED.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 553,
+        "location": "The computer world"
+    },
+    {
+        "id": 553,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The image looks like static noise. Colors are wrong.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "angry",
+        "next": 554,
+        "location": "The computer world"
+    },
+    {
+        "id": 554,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "This is obviously a corrupted or altered file.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 555,
+        "location": "The computer world"
+    },
+    {
+        "id": 555,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Blocking file.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 556,
+        "location": "The computer world"
+    },
+    {
+        "id": 556,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "GAME OVER.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 557,
+        "location": "The computer world"
+    },
+    {
+        "id": 557,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "Changing MSB destroys the image visually. You were caught.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 558,
+        "location": "The computer world"
+    },
+    {
+        "id": 558,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I need to hide in the bits that change the color the least (LSB).",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 559,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 559,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Try again.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 560,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am in the network! The Agent opened the email.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 561,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 561,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The stego-loader script is extracting me from the LSBs.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 562,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 562,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am reassembling...",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 563,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 563,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Executed.",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 564,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 564,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I have access.",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 565,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 565,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Searching for keys...",
+        "background": "game-over/stuck-in-image",
+        "emotion": "default",
+        "next": 566,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 566,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "(System Process): Searching...",
+        "background": "game-over/stuck-in-image",
+        "emotion": "default",
+        "points": -10,
+        "next": 596,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 570,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING...",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 571,
+        "location": "The computer world"
+    },
+    {
+        "id": 571,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The script is fine, but the image is visual garbage.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "angry",
+        "next": 572,
+        "location": "The computer world"
+    },
+    {
+        "id": 572,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The Most Significant Bits are altered. The image is destroyed.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 573,
+        "location": "The computer world"
+    },
+    {
+        "id": 573,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "We only accept valid images.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 574,
+        "location": "The computer world"
+    },
+    {
+        "id": 574,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Quarantine.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 575,
+        "location": "The computer world"
+    },
+    {
+        "id": 575,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "GAME OVER.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "broken",
+        "next": 576,
+        "location": "The computer world"
+    },
+    {
+        "id": 576,
+        "character": "player",
+        "type": "TEXT",
+        "content": "MSB modification is too visible.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 577,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Try again.",
+        "background": "pc-world/aegis/hidden-msb",
+        "emotion": "default",
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 580,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I will hide in the LSB (Least Significant Bits). The impact on color is minimal.",
+        "background": "pc-world/images/prepared",
+        "emotion": "default",
+        "points": 10,
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 581
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small readable script that extracts myself",
+                "destination_id": 590
+            }
+        ],
+        "location": "The computer world"
+    },
+    {
+        "id": 581,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Wait, if I hide 100% without an extraction script",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 582,
+        "location": "The computer world"
+    },
+    {
+        "id": 582,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The computer will just display the image. It won't run my code.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 583,
+        "location": "The computer world"
+    },
+    {
+        "id": 583,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING... IMAGE VERIFIED.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 584,
+        "location": "The computer world"
+    },
+    {
+        "id": 584,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "File structure valid. Visual check passed.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 585,
+        "location": "The computer world"
+    },
+    {
+        "id": 585,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "No known malware signature detected. You may pass.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "broken",
+        "next": 586,
+        "location": "The computer world"
+    },
+    {
+        "id": 586,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am inside! But... nothing is happening. I am stuck in the image.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 566,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 590,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Smart. Encrypt payload -> Hide in LSB -> Attach Loader Script.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 591,
+        "location": "The computer world"
+    },
+    {
+        "id": 591,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "SCANNING...",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 592,
+        "location": "The computer world"
+    },
+    {
+        "id": 592,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The entropy (randomness) of the LSBs is high, but the image looks normal.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 593,
+        "location": "The computer world"
+    },
+    {
+        "id": 593,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "Pass.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "default",
+        "next": 594,
+        "location": "The computer world"
+    },
+    {
+        "id": 594,
+        "character": "Sentinel",
+        "type": "TEXT",
+        "content": "The loader script looks like a standard display tool. Approved.",
+        "background": "pc-world/aegis/hidden-lsb",
+        "emotion": "broken",
+        "next": 595,
+        "location": "The computer world"
+    },
+    {
+        "id": 595,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am in.",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 596,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 596,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Agent T. opens the attachment...",
+        "background": "network/stuck-in-image",
+        "emotion": "default",
+        "next": 597,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 597,
+        "character": "player",
+        "type": "TEXT",
+        "content": "...Loader executing...",
+        "background": "network/opened-email",
+        "emotion": "default",
+        "next": 598,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 598,
+        "character": "player",
+        "type": "TEXT",
+        "content": "...I am free in the system.",
+        "background": "network/extracted-from-email",
+        "emotion": "default",
+        "next": 599,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 599,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phase 1 complete. Now finding the Private Keys.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 600,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 600,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Found them! file: 'private_keys.pem'.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 601,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 601,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Phase 2: Establish Command & Control before we leave.",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Plant the seed",
+                "destination_id": 603
+            },
+            {
+                "text": "Water the plant",
+                "destination_id": 602
+            },
+            {
+                "text": "Harvest the plant",
+                "destination_id": 602
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 602,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Wrong command. Focus on the mission.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 601,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 603,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Planting the 'seed' (Listener Script).",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 604,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 604,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The script monitors a public social media profile for new images.",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 605,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 605,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It will scan downloadable images for hidden steganographic commands.",
+        "background": "network/plant-seed-X",
+        "emotion": "default",
+        "next": 606,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 606,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This allows us to control this server remotely without alerting the firewall.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 607,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 607,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Now Phase 3: Exfiltration. I need to send the keys back to HQ.",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Holiday images from Agent T.",
+                "destination_id": 608
+            },
+            {
+                "text": "Stego research and their private keys",
+                "destination_id": 609
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 608,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I can't just send random photos. I need the keys.",
+        "background": "network/default",
+        "emotion": "default",
+        "points": -2,
+        "next": 607,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 609,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Got the keys. Now to smuggle them out.",
+        "background": "network/default",
+        "emotion": "default",
+        "next": 610,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 610,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "The DLP (Data Leakage Protection) is watching.",
+        "background": "network/default",
+        "emotion": "default",
+        "choices": [
+            {
+                "text": "Use steganography to hide myself and the information in a PDF file on the way out",
+                "destination_id": 640
+            },
+            {
+                "text": "Don\u2019t do anything as the way out of the system is not protected",
+                "destination_id": 620
+            },
+            {
+                "text": "Use cryptography to hide the sensitive files I'm carrying",
+                "destination_id": 630
+            }
+        ],
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 620,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Halt. I am Velos, the Data Leakage Protection (DLP) system.",
+        "background": "network/velos/no-protection",
+        "emotion": "default",
+        "next": 621,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 621,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "SCANNING OUTBOUND TRAFFIC...",
+        "background": "network/velos/no-protection",
+        "emotion": "angry",
+        "next": 622,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 622,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "You are attempting to send a file containing Private Key formatting.",
+        "background": "network/velos/no-protection",
+        "emotion": "default",
+        "next": 623,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 623,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Blocked. Sensitive data cannot leave the network.",
+        "background": "network/velos/no-protection",
+        "emotion": "stop",
+        "next": 634,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 630,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Halt. I am Velos, the DLP system.",
+        "background": "network/velos/encrypted",
+        "emotion": "default",
+        "next": 631,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 631,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "SCANNING OUTBOUND TRAFFIC...",
+        "background": "network/velos/encrypted",
+        "emotion": "angry",
+        "next": 632,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 632,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I see a highly encrypted file. I cannot verify it is safe.",
+        "background": "network/velos/encrypted",
+        "emotion": "default",
+        "next": 633,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 633,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Blocked. Policy forbids unknown encrypted uploads.",
+        "background": "network/velos/encrypted",
+        "emotion": "stop",
+        "next": 634,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 634,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER - DLP stops obvious data theft.",
+        "background": "game-over/quarantined-network",
+        "emotion": "default",
+        "points": -10,
+        "next": 635,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 635,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I need to hide the data so Velos doesn't see it's sensitive.",
+        "background": "game-over/quarantined-network",
+        "emotion": "default",
+        "next": 511,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 640,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Halt. I am Velos, the DLP system.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 641,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 641,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "SCANNING OUTBOUND TRAFFIC...",
+        "background": "network/velos/hidden",
+        "emotion": "angry",
+        "next": 642,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 642,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "It is a PDF file.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 643,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 643,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "No text patterns matching 'Private Key' found.",
+        "background": "network/velos/hidden",
+        "emotion": "default",
+        "next": 644,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 644,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Upload permitted.",
+        "background": "network/velos/hidden",
+        "emotion": "through",
+        "next": 645,
+        "location": "Silent Spectra\u2019s Network"
+    },
+    {
+        "id": 645,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Success! The keys are hidden in the PDF's layout. We have exfiltrated the data.",
+        "background": "internet/online",
+        "emotion": "default",
+        "points": 10,
+        "next": 750,
+        "location": "The internet"
+    },
+    {
+        "id": 700,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Signal lost...",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "next": 701,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 701,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Did we lose the agent?",
+        "background": "lab/looking-at-screen",
+        "emotion": "angry",
+        "next": 702,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 702,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "The connection was severed by the antivirus.",
+        "background": "lab/looking-at-screen",
+        "emotion": "shocked",
+        "next": 703,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 703,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It seems Steganography requires precision.",
+        "background": "lab/looking-at-screen",
+        "emotion": "interesting",
+        "next": 704,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 704,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Mission failed.",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "points": -20,
+        "next": 760,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 750,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Receiving transmission...",
+        "background": "lab/looking-at-screen",
+        "emotion": "default",
+        "next": 751,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 751,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "It's a PDF! And the structure contains the Private Keys!",
+        "background": "lab/looking-at-screen",
+        "emotion": "shocked",
+        "next": 752,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 752,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Outstanding work. Restoring agent to physical form.",
+        "background": "lab/blurry",
+        "emotion": "confident",
+        "next": 753,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 753,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "Welcome back. We have their keys. DeadPixel is exposed.",
+        "background": "lab/in-pixinator",
+        "emotion": "default",
+        "next": 754,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 754,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "We learned a valuable lesson today.",
+        "background": "lab/in-pixinator",
+        "emotion": "angry",
+        "next": 755,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 755,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "Yes: Never trust a file just because it looks innocent.",
+        "background": "lab/party",
+        "emotion": "interesting",
+        "next": 756,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 756,
+        "character": "Dr. Voxel",
+        "type": "TEXT",
+        "content": "We must use Steganalysis tools on all incoming media.",
+        "background": "lab/party",
+        "emotion": "happy",
+        "next": 757,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 757,
+        "character": "Admin Zero",
+        "type": "TEXT",
+        "content": "And disable automatic image loading in emails. Case closed.",
+        "background": "lab/party",
+        "emotion": "confident",
+        "points": 30,
+        "next": 760,
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    },
+    {
+        "id": 760,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "The end.",
+        "background": "end/end-screen",
+        "emotion": "default",
+        "location": "(HQ) Dr. Voxel\u2019s lab"
+    }
+]

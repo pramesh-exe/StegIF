@@ -1,0 +1,55 @@
+services:
+    #PHP
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
+        networks:
+            - app-network
+
+    #Nginx
+    webserver:
+        image: nginx:alpine
+        container_name: webserver_stegadventure
+        restart: unless-stopped
+        ports:
+            - "9797:80"
+            - "9898:443"
+        volumes:
+            - ./:/var/www
+            - ./nginx/:/etc/nginx/conf.d/
+        networks:
+            - app-network
+    # MySQL
+    db_stegadventure:
+        image: mysql:5.7.22
+        container_name: db_stegadventure
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "9333:3306"
+        environment:
+            MYSQL_DATABASE: stegadventure
+            MYSQL_USER: noon
+            MYSQL_PASSWORD: sunrise
+            MYSQL_ROOT_PASSWORD: fall
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql
+        volumes:
+            - dbdata:/var/lib/mysql/
+        networks:
+            - app-network
+
+# Networks
+networks:
+    app-network:
+        driver: bridge
+
+# Volumes
+volumes:
+    dbdata:
+        driver: local

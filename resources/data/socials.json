@@ -1,0 +1,46 @@
+{
+    "x": {
+        "url": "",
+        "icon": "fa-brands fa-x-twitter"
+    },
+    "linkedin": {
+        "url": "",
+        "icon": "fa-brands fa-linkedin"
+    },
+    "facebook": {
+        "url": "",
+        "icon": "fa-brands fa-facebook"
+    },
+    "instagram": {
+        "url": "",
+        "icon": "fa-brands fa-instagram"
+    },
+    "youtube": {
+        "url": "",
+        "icon": "fa-brands fa-youtube"
+    },
+    "twitch": {
+        "url": "",
+        "icon": "fa-brands fa-twitch"
+    },
+    "whatsapp": {
+        "url": "",
+        "icon": "fa-brands fa-whatsapp"
+    },
+    "discord": {
+        "url": "",
+        "icon": "fa-brands fa-discord"
+    },
+    "mail": {
+        "url": "",
+        "icon": "fa-solid fa-envelope"
+    },
+    "phone": {
+        "url": "",
+        "icon": "fa-solid fa-phone"
+    },
+    "maps": {
+        "url": "",
+        "icon": "fa-solid fa-location-pin"
+    }
+}
