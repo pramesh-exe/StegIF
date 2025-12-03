@@ -4,7 +4,6 @@ This is a project for a serious game on the topic of steganography. The game is 
 
 ### Created by
 
--   F.G.J. Weijsenfeld
 
 ## About this project
 
