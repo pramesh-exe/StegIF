@@ -1,9 +1,6 @@
-# StegAdventure
-
-This is a project for a serious game on the topic of steganography. The game is used for research purposes to design and validate a narrative-based game on steganography. This source code provides the code to replicate the study, and to adjust and/or use the game in own contexts.
+# StegIf
 
 ### Created by
-
 
 ## About this project
 
@@ -98,7 +95,7 @@ Characters can either just say something (Type = `TEXT`) or ask a question (Type
 
 The Location column specifies a location visible to the user for a more understandable story. The path in the Background column refers to the image used as background. The background images can be found in `/public/backgrounds`.
 
-So, using `dialogue.xlsx` and changing the images, the story can be adjusted and a new game can even be created. By default, the game is hosted in the `/game` path, as `/` is used for the research. You can use the `/story`-path to debug the newly created story, as it shows a directed graph of the story. Do not forget to run ` ` in the same folder as `dialogue.xlsx` to recreate the necessary json file for the system.
+So, using `dialogue.xlsx` and changing the images, the story can be adjusted and a new game can even be created. By default, the game is hosted in the `/game` path, as `/` is used for the research. You can use the `/story`-path to debug the newly created story, as it shows a directed graph of the story. Do not forget to run `python convert_to_json.py ` in the same folder as `dialogue.xlsx` to recreate the necessary json file for the system.
 
 ## Project structure
 
@@ -135,9 +132,3 @@ Vue documentation can be found [here](https://vuejs.org/guide/).
 In this project, Vue is extended with Vuetify, so pre-made Vuetify components can be used. All Vuetify components can be found [here](https://vuetifyjs.com/en/components/all/).
 
 ## AI statement
-
-During the preparation of this work, I used ChatGPT to generate code or find bugs in my code while creating the experiment environment and the graphs for data analysis. ChatGPT never received any participant data.
-
-Additionally, I used Adobe Firefly to generate background images for the game to improve aesthetics. Other images used in the experiment, are either licensed to be able to used in this project, or have been drawn by myself.
-
-After using these services, I thoroughly reviewed and edited the content as needed, taking full responsibility for the final outcome.

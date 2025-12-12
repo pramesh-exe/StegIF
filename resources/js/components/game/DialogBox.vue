@@ -1,6 +1,6 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { updateContainerSize } from './resize.js';
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import { updateContainerSize } from "./resize.js";
 
 const props = defineProps({
     node: Object,
@@ -13,15 +13,15 @@ const hasRead = ref(false);
 // Styling
 const backgroundContainer = ref(null);
 const backgroundImage = ref(null);
-const fontSizeText = ref('28px');
-const fontSizeChoice = ref('20px');
+const fontSizeText = ref("28px");
+const fontSizeChoice = ref("20px");
 
 // Function used to handle the click event
 function handleOnClick() {
-    if (props.node.type === 'TEXT') {
+    if (props.node.type === "TEXT") {
         props.onClick();
     }
-    if (props.node.type === 'QUESTION') {
+    if (props.node.type === "QUESTION") {
         hasRead.value = true;
     }
 }
@@ -63,45 +63,49 @@ function getTextCloudImage() {
 function getChapterNumber() {
     const startWith = String(props.node.id).charAt(0);
     if (startWith === "1") {
-        return "1: Big Trouble"
+        return "1: The Invisible Ink";
     }
     if (startWith === "2") {
-        return "2: The Investigation"
+        return "2: Paint by Numbers";
     }
     if (startWith === "3") {
-        return "3: Hidden in Plain Sight"
+        return "3: The Bad Guys";
     }
     if (startWith === "4") {
-        return "4: The Plan"
+        return "4: The False Alarm & the Trap";
     }
-    // Chapter 6 and 5 are chapter 5
-    if (startWith === "5" || startWith === "6") {
-        return "5: The Execution";
+    if (startWith === "5") {
+        return "5: Washing the Data";
     }
-    if (startWith === "7") {
-        return "6: The Result"
+    if (startWith === "6") {
+        return "6: Bonus";
     }
     return startWith;
 }
 
 // Update the background and font sizes dynamically
 function updateSizes() {
-    updateContainerSize(backgroundImage, backgroundContainer, fontSizeText, fontSizeChoice);
+    updateContainerSize(
+        backgroundImage,
+        backgroundContainer,
+        fontSizeText,
+        fontSizeChoice
+    );
 }
 
 // Return fallback image if image not found
 function handleBackgroundImageError(event) {
-    event.target.src = '/backgrounds/fallback.png';
+    event.target.src = "/backgrounds/fallback.png";
 }
 
 // Return fallback image if image not found
 function handleCharacterImageError(event) {
-    event.target.src = '/characters/fallback.webp';
+    event.target.src = "/characters/fallback.webp";
 }
 
 // Return fallback image if image not found
 function handleTextCloudImageError(event) {
-    event.target.src = '/characters/fallback-text.webp';
+    event.target.src = "/characters/fallback-text.webp";
 }
 
 onMounted(() => {
@@ -112,38 +116,69 @@ onMounted(() => {
 onBeforeUnmount(() => {
     window.removeEventListener("resize", updateSizes);
 });
-
 </script>
 
 <template>
     <div class="click noselect" @click="handleOnClick">
         <div ref="backgroundContainer" class="background-container">
             <!-- Background -->
-            <img ref="backgroundImage" class="background-image" :src="getBackgroundImage()" @load="updateSizes"
-                @error="handleBackgroundImageError" />
+            <img
+                ref="backgroundImage"
+                class="background-image"
+                :src="getBackgroundImage()"
+                @load="updateSizes"
+                @error="handleBackgroundImageError"
+            />
             <!-- Character -->
-            <img class="character-image" :src="getCharacterImage()" @error="handleCharacterImageError" />
+            <img
+                class="character-image"
+                :src="getCharacterImage()"
+                @error="handleCharacterImageError"
+            />
             <!-- Text Cloud -->
-            <img v-if="props.node.id !== 760" class="character-image" :src="getTextCloudImage()"
-                @error="handleTextCloudImageError" />
+            <img
+                v-if="props.node.id !== 760"
+                class="character-image"
+                :src="getTextCloudImage()"
+                @error="handleTextCloudImageError"
+            />
             <!-- Story Info -->
             <div class="story-info">
                 <b>Chapter: {{ getChapterNumber() }}</b>
                 <br />
-                <i class="fa-solid fa-location-dot" />&nbsp;{{ props.node.location }}
+                <i class="fa-solid fa-location-dot" />&nbsp;{{
+                    props.node.location
+                }}
             </div>
 
             <!-- Type TEXT & Type QUESTION -->
-            <p v-if="props.node.id !== 760" :class="props.node.character === 'player' ? 'text-player' : 'text'"
-                :style="{ fontSize: fontSizeText }">
+            <p
+                v-if="props.node.id !== 760"
+                :class="
+                    props.node.character === 'player' ? 'text-player' : 'text'
+                "
+                :style="{ fontSize: fontSizeText }"
+            >
                 {{ getContent() }}
             </p>
             <!-- Type QUESTION -->
-            <div v-if="hasRead" class="choices"
-                :style="node.choices.length > 5 ? { gridTemplateColumns: '1fr 1fr' } : {}">
+            <div
+                v-if="hasRead"
+                class="choices"
+                :style="
+                    node.choices.length > 5
+                        ? { gridTemplateColumns: '1fr 1fr' }
+                        : {}
+                "
+            >
                 <div />
-                <div v-for="choice in node.choices" :key="choice.text" class="choice"
-                    :style="{ fontSize: fontSizeChoice }" @click="handleOnClickAnswer(choice)">
+                <div
+                    v-for="choice in node.choices"
+                    :key="choice.text"
+                    class="choice"
+                    :style="{ fontSize: fontSizeChoice }"
+                    @click="handleOnClickAnswer(choice)"
+                >
                     {{ choice.text }}
                 </div>
             </div>
@@ -193,7 +228,7 @@ onBeforeUnmount(() => {
 }
 
 .text {
-    color: white;
+    color: black;
     position: absolute;
     top: 74.5%;
     left: 33%;
