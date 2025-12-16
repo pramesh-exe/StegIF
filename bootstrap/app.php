@@ -11,8 +11,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+
+        // ✅ IMPORTANT on Railway / any reverse proxy:
+        $middleware->trustProxies(at: '*');
+
         $middleware->validateCsrfTokens(except: [
-            // exclude these routes
             '/api/participant/create',
             '/api/participant/finish',
             '/api/profile/create',
