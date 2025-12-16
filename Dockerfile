@@ -50,7 +50,8 @@ RUN npm run build
 
 # PHP-FPM
 
+# Expose a default (Railway will still use $PORT)
 EXPOSE 8080
 
-CMD php artisan serve --host=0.0.0.0 --port=8080
-
+# Start Laravel on the port Railway provides
+CMD ["sh", "-c", "php artisan config:clear && php artisan route:clear && php artisan view:clear && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
