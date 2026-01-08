@@ -95,7 +95,7 @@ Characters can either just say something (Type = `TEXT`) or ask a question (Type
 
 The Location column specifies a location visible to the user for a more understandable story. The path in the Background column refers to the image used as background. The background images can be found in `/public/backgrounds`.
 
-So, using `dialogue.xlsx` and changing the images, the story can be adjusted and a new game can even be created. By default, the game is hosted in the `/game` path, as `/` is used for the research. You can use the `/story`-path to debug the newly created story, as it shows a directed graph of the story. Do not forget to run `python convert_to_json.py ` in the same folder as `dialogue.xlsx` to recreate the necessary json file for the system.
+So, using `dialogue.xlsx` and changing the images, the story can be adjusted and a new game can even be created. By default, the game is hosted in the `/game` path, as `/` is used for the research. You can use the `/story`-path to debug the newly created story, as it shows a directed graph of the story. Do not forget to run `python convert_to_json.py` in the same folder as `dialogue.xlsx` to recreate the necessary json file for the system.
 
 ## Project structure
 

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 import { updateContainerSize } from "./resize.js";
 
 const props = defineProps({
@@ -44,6 +44,29 @@ function getContent() {
     return replacePlaceholders(props.node.content, { name: props.name });
 }
 
+// Split text into plain segments and clickable links
+const linkifiedContent = computed(() => {
+    const text = getContent();
+    const parts = [];
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = urlRegex.exec(text)) !== null) {
+        const start = match.index;
+        if (start > lastIndex) {
+            parts.push({ type: "text", text: text.slice(lastIndex, start) });
+        }
+        const url = match[0];
+        parts.push({ type: "link", text: url, href: url });
+        lastIndex = start + url.length;
+    }
+    if (lastIndex < text.length) {
+        parts.push({ type: "text", text: text.slice(lastIndex) });
+    }
+    return parts;
+});
+
 // Image path for the background
 function getBackgroundImage() {
     return `/backgrounds/${props.node.background}.jpeg`;
@@ -62,6 +85,9 @@ function getTextCloudImage() {
 // Chapter number
 function getChapterNumber() {
     const startWith = String(props.node.id).charAt(0);
+    if (startWith === "9") {
+        return "0: Title Screen";
+    }
     if (startWith === "1") {
         return "1: The Invisible Ink";
     }
@@ -159,7 +185,17 @@ onBeforeUnmount(() => {
                 "
                 :style="{ fontSize: fontSizeText }"
             >
-                {{ getContent() }}
+                <template v-for="(part, i) in linkifiedContent" :key="i">
+                    <a
+                        v-if="part.type === 'link'"
+                        :href="part.href"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {{ part.text }}
+                    </a>
+                    <span v-else>{{ part.text }}</span>
+                </template>
             </p>
             <!-- Type QUESTION -->
             <div
@@ -183,6 +219,8 @@ onBeforeUnmount(() => {
                 </div>
             </div>
         </div>
+        <!-- Footer -->
+        <div class="footer">© 2025 StegIF. All rights reserved.</div>
     </div>
 </template>
 
@@ -283,5 +321,18 @@ onBeforeUnmount(() => {
     border-radius: 10px;
     color: white;
     background-color: #00000090;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #00000050;
+    padding: 8px 0;
+    font-size: 14px;
+    text-align: center;
+    pointer-events: none;
 }
 </style>
